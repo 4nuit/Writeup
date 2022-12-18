@@ -1,0 +1,11 @@
+.
+└── usr
+    ├── bin
+    │   ├── safe3000-engine
+    │   └── safe3000-updater
+    └── lib
+        ├── libcrypto.so
+        ├── libmotor.so
+        └── libscreen.so
+
+3 directories, 5 files

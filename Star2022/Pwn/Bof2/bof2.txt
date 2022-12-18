@@ -1,0 +1,5 @@
+#Puts décale le bof à 58 caractères
+#obtenir l'adresse de shell
+#python rajoute \n
+
+Utiliser printf ou echo -ne(padding 62)

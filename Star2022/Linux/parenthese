@@ -1,0 +1,2 @@
+sudo chattr +i test #fichier permanent (même en root)
+sudo chattr -i #supprimer

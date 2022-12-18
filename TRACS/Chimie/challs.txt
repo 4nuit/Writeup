@@ -1,0 +1,7 @@
+Dans l'énoncé on doit jouer aux chimiste pour avoir des infos sur l'isotope d'indium
+et les empreintes de la personne liée à la malversation politique.
+
+empreinte: saupoudrer canette poudre orange -> empreinte en boucle -> suspect 153
+FLAG:153
+
+isotope: protocole -> soude -> gris -> In(28) (faux)

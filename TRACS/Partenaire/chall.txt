@@ -1,0 +1,9 @@
+Dans l'énoncé, nous sommes associés à une équipe (non réciproque) dans cet imbroglio politique.
+Trouver le code barre de l'équipe associée à la photo (on parcourt le bâtiment):
+
+qrcode décodé de l'équipe 
+28-e185a935d4240029417d7643bee6987a :
+
+-> servait à rien, juste le code barre .
+
+Flag(pour nous): 4677251447395

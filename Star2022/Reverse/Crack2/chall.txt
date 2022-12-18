@@ -1,0 +1,9 @@
+ida + F5
+ou r2 aaa / s main / VV 
+
+chercher les cmp puis les passer dans chr() , dans l'ordre!
+
+#pour r2
+add rax,8 -> décalage de 8 pour chaque caractère
+trier l'ordre des comparaison grâce aux 2nds rax (add rax, 0x21)
+

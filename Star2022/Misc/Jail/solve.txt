@@ -1,0 +1,3 @@
+ctrl-o #lancer des cmd en insertion
+:r flag.txt
+#ou :e flag.txt

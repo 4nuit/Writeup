@@ -1,0 +1,8 @@
+#pas réussi
+
+python vol.py -f dump.elf windows.envars.Envars
+python vol.py -f dump.elf windows.hashdump.Hashdump -> hashs non exploitables
+python vol.py -f dump.elf windows.pstree.Pstree
+python vol.py -f dump.elf windows.netscan.Netscan
+
+-> trouver du ssh 

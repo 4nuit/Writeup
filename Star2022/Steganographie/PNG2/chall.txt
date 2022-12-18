@@ -1,0 +1,13 @@
+#pas réussi
+chunks
+
+PNG commence avec:
+89 50 4E 47 0D 0A 1A 0A -> xxd -l8 stage2.png  ok
+
+
+-> hexedit
+File: stage2.png (1102028 bytes)
+  chunk IHDR at offset 0x0000c, length 13
+    1024 x 683 image, 32-bit RGB+alpha, non-interlaced
+  chunk sTeG at offset 0x00025, length 555197:  illegal reserved-bit-set chunk
+ERRORS DETECTED in stage2.png

@@ -1,3 +1,3 @@
 # Writeup
 
-Notes de CTFs
+Notes de CTFs, solo ou en équipe.

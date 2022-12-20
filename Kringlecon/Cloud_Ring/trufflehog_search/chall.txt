@@ -1,0 +1,24 @@
+Le but est de fouiller le gitlab pour obtenir un accès avec la CLI aws
+/*
+Use Trufflehog to find credentials in the Gitlab instance at https://haugfactory.com/asnowball/ctory.com/asnowball/aws_scripts.git.
+Configure these credentials for us-east-1 and then run:
+$ aws sts get-caller-identity
+*/
+
+trufflehog git <le repo> nous indique un ID, mais pas de clé privée.
+
+Par contre on remarque pour cet ID le commit 106d33e1ffd53eea753c1365eafc6588398279b5 de put_policy.py
+
+On a alors l'idée de cloner le repo (cf ../../Elfen_Ring/prison_escape) et de regarder les logs:
+
+git show 106d33e1ffd53eea753c1365eafc6588398279b5
+
+On trouve alors un couple id/clé.
+
+On se configure et se connecte (voir png):
+
+aws configure
+aws sts get-caller-identity
+
+Le tour est joué, le dernier challenge peut commencer
+

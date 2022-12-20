@@ -20,8 +20,13 @@ Historique:
 
 sudo docker history --no-trunc shisuiyogo/christmas
 
+sudo docker cp <id>:/data/secret_note.txt secret_note.txt
+
+find / -name "secret_note.txt" 2>/dev/null
+
 
 Approche n°2:
+
 https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-breakout
 
 sudo docker save shisuiyogo/christmas > image.tar
@@ -31,4 +36,4 @@ cd 83a876e6bc15edb67a6feed676fdc1929e8019067cb0dd02846e1365e8a0c925
 tar -xf layer.tar
 cd data; cat secret*
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/tree/master/Yogosha/Welcome/image.png)
+![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/Yogosha/Welcome/image.png)

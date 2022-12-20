@@ -1,3 +1,0 @@
-On remarque rapidement au vu du titre et du contenu de / que nous nous situons dans un conteneur docker.
-Voir chall.png
-

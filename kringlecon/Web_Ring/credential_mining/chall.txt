@@ -1,7 +1,0 @@
-Consigne:
-/*
-The first attack is a brute force login. What's the first username tried?
-*/
-
-strings victim.pcap | grep "username=" | head -n 1
-

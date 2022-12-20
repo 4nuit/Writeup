@@ -4,16 +4,11 @@ On essaie de pull
 
 sudo docker pull shisuiyogo/christmas
 
-Approche n°1:
+# Approche n°1:
 
 sudo docker run -it shisuiyogo/christmas
 
 WARNING: The requested image's platform (linux/arm64/v8) does not match the detected host platform (linux/amd64) and no specific platform was requested
-exec /bin/bash: exec format error
-
-On rebuild en arm
-
-sudo docker run --platform linux/arm64 shisuiyogo/christmas 
 exec /bin/bash: exec format error
 
 Historique:
@@ -22,10 +17,17 @@ sudo docker history --no-trunc shisuiyogo/christmas
 
 sudo docker cp <id>:/data/secret_note.txt secret_note.txt
 
-find / -name "secret_note.txt" 2>/dev/null
+-> ne sert à rien car le conteneur efface le fichier
 
+Find:
 
-Approche n°2:
+sudo find / -name "secret_note.txt" 2>/dev/null
+
+![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/Yogosha/Welcome/find.png)
+
+Il ne reste plus qu'à afficher le premier fichier
+
+# Approche n°2:
 
 https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-breakout
 

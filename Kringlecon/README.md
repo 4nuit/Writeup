@@ -2,4 +2,4 @@
 
 Notes sur le ctf du SANS
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/kringlecon/solves.png)
+![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/Kringlecon/solves.png)

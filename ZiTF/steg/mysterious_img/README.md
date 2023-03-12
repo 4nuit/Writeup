@@ -9,7 +9,7 @@ En effet une image est définit par des "chunks" (IEND, IDATA par exemple) et un
 Et effectivement celle - ci a été éditée en une signature d'un éxécutable ELF.
 Voir:
 
-![alt text](http://www.libpng.org/pub/png/spec/1.2/PNG-Chunks.html)
+http://www.libpng.org/pub/png/spec/1.2/PNG-Chunks.html
 
 On peut vérifier ceci en comparant la signature avec une image valide:
 ![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/steg/mysterious_img/check.png)

@@ -35,3 +35,7 @@ d = inverse(e,phi)
 m = pow(ct,d,n)
 print(long_to_bytes(m))
 ```
+
+Autre solution:
+
+https://www.alpertron.com.ar/ECM.HTM

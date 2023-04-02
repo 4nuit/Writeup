@@ -5,6 +5,7 @@
 ![rsa](./crypto/rsa)
 ![secret key](./misc/secret_key)
 ![chat not gpt](./web/chat_not_gpt)
+![whitenoise](./stega/whitenoise)
 
 ## Résultats
 

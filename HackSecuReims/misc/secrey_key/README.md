@@ -11,8 +11,7 @@ On extrait donc son contenu:
 
 On obtient un zip, qu'on essaie de dézipper avec 7zip au vu de la version, mais protégé par mot de passe:
 
-![](./zip.png]
-
+![](./zip.png)
 
 ## Crack avec john
 

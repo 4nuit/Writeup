@@ -2,9 +2,9 @@
 
 ## Challs
 
-![](./crypto/rsa)
-![](./misc/secret_key)
-![](./web/chat_not_gpt)
+![rsa](./crypto/rsa)
+![secret key](./misc/secret_key)
+![chat not gpt](./web/chat_not_gpt)
 
 ## Résultats
 

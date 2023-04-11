@@ -1,13 +1,16 @@
 
 # Challs makhno (voir [le wu de Smyler](./Writeup.pdf))
 
-Challenge/Dump disponible ici : https://mega.nz/file/hDN3DbzK#FkVQP2U9GfsB_HIG_JUbHD5h0KyP0rAQiI8nS97O7oc
+**Challenge/Dump** disponible ici : https://mega.nz/file/hDN3DbzK#FkVQP2U9GfsB_HIG_JUbHD5h0KyP0rAQiI8nS97O7oc
+
 Doc : [HTB](https://www.hackthebox.com/blog/memory-forensics-volatility-write-up)
 
 # Flag1
 
-En pratique je ne m'étais intéressé au challenge qu'à la fin et n'avait pas dépassé la simple recherche à coup de grep.
+En pratique je ne m'étais intéressé au challenge qu'à la fin et n'avait pas dépassé la simple recherche à coup de `grep`.
 Ce README a pour objectif personnel de refaire l'exploitation.
+
+Nous ne pouvons pas monter l'image non plus.
 
 ## Connaître le kernel
 
@@ -22,9 +25,11 @@ Offset  Banner
 0xc800200       Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
 ```
 
+Nous allons devoir construire un profil correspondant à ce kernel pour analyser le dump avec volatility.
+
 ## Installer les headers, symboles de debug et utilitaires
 
-On crée une VM avec l'iso de Debian11:
+On crée une VM avec l'iso de **Debian11**:
 
 ```bash
 sudo apt install linux-headers-5.10.0-21-amd64 linux-image-5.10.0-21-amd64-dbg git build-essential dwarfdump make zip
@@ -96,6 +101,7 @@ Un find nous indique 1020 bash l'emplacement du clair mais effacé.
 
 ```bash
 ./var/tmp/media/sf_DUMP
+./var/tmp/home/forensic/volatility/tools/linux/HSR
 ```
 
 **Attention: plugin vol3 (voir ./dwarf2json plus haut) nécessaire ici:**
@@ -158,15 +164,28 @@ En sortant le chiffré et en écrivant un court script python, on obtient le fla
 ![](./screen4-2.png)
 
 ```python
-enc = bytes.fromhex("989982b1a8faa295e1b98fade0fab49593b8a9baa4fa8fa5a2959efaa4b7")
-dec = bytearray()
-key1 = enc[0] ^ ord('H')
-key2 = enc[1] ^ ord('S')
-for i, x in enumerate(enc):
-	if i % 2 == 0:
-		dec.append(key1 ^ x)
-	else:
-		dec.append(key2 ^ x)
-print(dec)
+from itertools import cycle
+
+#1 cipher = plain ^ key
+#3 cipher ^key = plain
+#2 key = plain ^cipher
+
+cipher="989982b1a8faa295e1b98fade0fab49593b8a9baa4fa8fa5a2959efaa4b7"
+key="HSR{"
+
+cipher = bytes.fromhex(cipher)
+cipher = [b for b in cipher]
+key = [ord(c) for c in key]
+
+plain_key = [ t[0]^t[1] for t in zip(cipher,key)]
+key = [chr(x) for x in plain_key]
+print("key:", ''.join(key))
+
+for i in range(len(key),len(cipher)):
+        plain_key.append(plain_key[i%len(key)])
+
+plain = [t[0]^t[1] for t in zip(cipher,plain_key)]
+plain = [chr(x) for x in plain]
+print(''.join(plain))
 # HSR{x0r_1s_g00d_Crypt0_or_N0t}
 ```

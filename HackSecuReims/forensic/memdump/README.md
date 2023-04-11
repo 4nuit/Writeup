@@ -48,6 +48,7 @@ cp Debian_5.10.0-21-amd64_profile.zip volatility/volatility/plugins/overlays/lin
 **Attention: avoir une RAM > 5Go** pour./dwarf2json
 
 ```bash
+sudo apt install golang
 git clone https://github.com/volatilityfoundation/dwarf2json
 cd dwarf2json/
 go mod download github.com/spf13/pflag
@@ -97,7 +98,7 @@ Un find nous indique 1020 bash l'emplacement du clair mais effacé.
 ./var/tmp/media/sf_DUMP
 ```
 
-**Attention: vol3 nécessaire ici:**
+**Attention: plugin vol3 (voir ./dwarf2json plus haut) nécessaire ici:**
 
 - On vérifie les processus listés
 - On utilise un plugin trouvé facilement sur google pour retrouver la clé:

@@ -1,0 +1,99 @@
+*** Failed to import volatility.plugins.registry.shutdown (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.getservicesids (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.timeliner (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.malware.apihooks (NameError: name 'distorm3' is not defined)
+*** Failed to import volatility.plugins.malware.servicediff (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.userassist (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.getsids (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.shellbags (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.evtlogs (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.tcaudit (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.dumpregistry (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.lsadump (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.malware.threads (NameError: name 'distorm3' is not defined)
+*** Failed to import volatility.plugins.mac.apihooks_kernel (ImportError: No module named distorm3)
+*** Failed to import volatility.plugins.registry.amcache (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.mac.check_syscall_shadow (ImportError: No module named distorm3)
+*** Failed to import volatility.plugins.malware.svcscan (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.auditpol (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.ssdt (NameError: name 'distorm3' is not defined)
+*** Failed to import volatility.plugins.registry.registryapi (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.mac.apihooks (ImportError: No module named distorm3)
+*** Failed to import volatility.plugins.envars (ImportError: No module named Crypto.Hash)
+*** Failed to import volatility.plugins.registry.shimcache (ImportError: No module named Crypto.Hash)
+Pid      Name                 Command Time                   Command
+-------- -------------------- ------------------------------ -------
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   mkdir .ssh
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   su
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   ping 1.1.1.1
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   ip a
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   UH??H?H??t?????H??]?????D
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   su
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   history 
+    1016 bash                 2023-03-14 20:17:10 UTC+0000   AUA??ATA?
+    1016 bash                 2023-03-14 20:17:13 UTC+0000   su
+    1020 bash                 2023-03-14 20:17:19 UTC+0000   apt install terminator
+    1020 bash                 2023-03-14 20:17:19 UTC+0000   git clone https://github.com/volatilityfoundation/volatility.git
+    1020 bash                 2023-03-14 20:17:19 UTC+0000   history 
+    1020 bash                 2023-03-14 20:17:19 UTC+0000   apt install make gcc zip git dwarfdump linux-headers-$(uname -r)
+    1020 bash                 2023-03-14 20:17:19 UTC+0000   apt install chromium firefox-esr geany
+    1020 bash                 2023-03-14 20:17:22 UTC+0000   ls -l
+    1020 bash                 2023-03-14 20:17:28 UTC+0000   history 
+    1020 bash                 2023-03-14 20:17:47 UTC+0000   apt-cache search linux-image |grep dbg
+    1020 bash                 2023-03-14 20:17:47 UTC+0000   git clone https://github.com/volatilityfoundation/dwarf2json
+    1020 bash                 2023-03-14 20:17:48 UTC+0000   apt install linux-image-$(uname -r)-dbg
+    1020 bash                 2023-03-14 20:17:48 UTC+0000   apt install golang-go
+    1020 bash                 2023-03-14 20:17:48 UTC+0000   echo -n "RmxhZyBpcyA6IEhTUntNM20wcnlfRjByM25zMWNzXzN2M3J5X1QxbWV9"
+    1020 bash                 2023-03-14 20:17:59 UTC+0000   cd dwarf2json/
+    1020 bash                 2023-03-14 20:18:05 UTC+0000   go version
+    1020 bash                 2023-03-14 20:18:09 UTC+0000   go build
+    1020 bash                 2023-03-14 20:18:12 UTC+0000   cd ..
+    1020 bash                 2023-03-14 20:18:25 UTC+0000   ./dwarf2json linux --elf /usr/lib/debug/boot/vmlinux-5.10.0-21-amd64 --system-map /usr/lib/debug/boot/System.map-5.10.0-21-amd64 | xz -c > debian-5.10.0-21-amd64.json.xz
+    1020 bash                 2023-03-14 20:18:48 UTC+0000   ls -l
+    1020 bash                 2023-03-14 20:19:03 UTC+0000   make -C /lib/modules/5.10.0-21-amd64/build CONFIG_DEBUG_INFO=y M= modules
+    1020 bash                 2023-03-14 20:19:03 UTC+0000   cd /home/forensic/volatility/tools/linux
+    1020 bash                 2023-03-14 20:19:04 UTC+0000   dwarfdump -di ./module.o > module.dwarf
+    1020 bash                 2023-03-14 20:19:04 UTC+0000   zip linux-profile-hsr-$(uname -r).zip module.dwarf /usr/lib/debug/boot/System.map-$(uname -r)
+    1020 bash                 2023-03-14 20:19:04 UTC+0000   mv linux-profile-hsr-$(uname -r).zip /media/sf_DUMP/
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{F4k3_Fl4gs_b3caus3_strings|grep_are_not_your_friend_f0r_this_chall}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   w
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_In_M3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_in_M3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{FIl3_In_M3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_In_M3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_in_m3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_in_m3m0ry_f0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_in_M3m0ry_f0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{Fil3_In_M3m0ry_f0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{FIl3_in_M3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{FIl3_in_m3m0ry_F0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{FIl3_in_m3m0ry_f0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   echo -n "HSR{FIl3_in_M3m0ry_f0r3ns1cs}"
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   ls -l
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   uname -a
+    1020 bash                 2023-03-14 20:19:14 UTC+0000   id
+    1020 bash                 2023-03-14 20:19:50 UTC+0000   cp /media/sf_DUMP/HSR/ .
+    1020 bash                 2023-03-14 20:19:56 UTC+0000   cp -r /media/sf_DUMP/HSR/ .
+    1020 bash                 2023-03-14 20:19:59 UTC+0000   cd HSR/
+    1020 bash                 2023-03-14 20:20:26 UTC+0000   gpg --symmetric --cipher-algo AES-256 -o flag.enc flag.pdf
+    1020 bash                 2023-03-14 20:20:39 UTC+0000   chown -R forensic: HSR/
+    1020 bash                 2023-03-14 20:20:41 UTC+0000   cd ..
+    1020 bash                 2023-03-14 20:20:44 UTC+0000   chown -R forensic: HSR/
+    1020 bash                 2023-03-14 20:20:47 UTC+0000   ls -ail
+    1020 bash                 2023-03-14 20:20:52 UTC+0000   cd HSR
+    1020 bash                 2023-03-14 20:21:12 UTC+0000   cd ..
+    1020 bash                 2023-03-14 20:21:14 UTC+0000   base64 HSR/flag.enc > HSR/flag.enc.b64
+    1020 bash                 2023-03-14 20:21:18 UTC+0000   cd HSR/
+    1020 bash                 2023-03-14 20:21:20 UTC+0000   ls -ail
+    1020 bash                 2023-03-14 20:22:39 UTC+0000   ls -ail
+    1020 bash                 2023-03-14 20:23:03 UTC+0000   gcc a.c -o ransomware.o
+    1020 bash                 2023-03-14 20:23:06 UTC+0000   ls -ail
+    1020 bash                 2023-03-14 20:23:43 UTC+0000   ./ransomware.o 
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   mkdir .ssh
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   su
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   ping 1.1.1.1
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   ip a
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   UH??H?H??t?????H??]?????D
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   su
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   history 
+    1540 bash                 2023-03-14 20:22:03 UTC+0000   ??xLU?-?

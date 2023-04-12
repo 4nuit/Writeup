@@ -3,14 +3,14 @@
 
 **Challenge/Dump** disponible ici : https://mega.nz/file/hDN3DbzK#FkVQP2U9GfsB_HIG_JUbHD5h0KyP0rAQiI8nS97O7oc
 
-Doc : [HTB](https://www.hackthebox.com/blog/memory-forensics-volatility-write-up)
+Doc : [HTB](https://www.hackthebox.com/blog/memory-forensics-volatility-write-up) [How to generate a linux profile](https://andreafortuna.org/2019/08/22/how-to-generate-a-volatility-profile-for-a-linux-system/)
 
 # Flag1
 
 En pratique je ne m'étais intéressé au challenge qu'à la fin et n'avait pas dépassé la simple recherche à coup de `grep`.
 Ce README a pour objectif personnel de refaire l'exploitation.
 
-Nous ne pouvons pas monter l'image non plus.
+Nous avons un dump de la RAM d'une machine inconnue.
 
 ## Connaître le kernel
 
@@ -25,6 +25,13 @@ Offset  Banner
 0xc800200       Linux version 5.10.0-21-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.162-1 (2023-01-21)
 ```
 
+On peut également faire:
+
+```bash
+strings openme.dmp | grep "Linux version" | sort | uniq
+#strings openme.dmp | grep "Debian" | sort | uniq
+```
+
 Nous allons devoir construire un profil correspondant à ce kernel pour analyser le dump avec volatility.
 
 ## Installer les headers, symboles de debug et utilitaires
@@ -37,8 +44,6 @@ sudo apt install linux-headers-5.10.0-21-amd64 linux-image-5.10.0-21-amd64-dbg g
 
 ## Construire le profil avec vol2
 
-Attention, le profil crée se nommera **LinuxDebian_5_10_0-21-amd64_profilex64**, la plupart des plugins seront en **linux_bash, linux_pslist** etc.
-
 ```bash
 git clone https://github.com/volatilityfoundation/volatility
 cd volatility/volatility/tools/linux
@@ -46,6 +51,12 @@ make
 cd
 zip $(lsb_release -i -s)_$(uname -r)_profile.zip volatility/tools/linux/module.dwarf /usr/lib/debug/boot/System.map-5.10.0-21-amd64
 cp Debian_5.10.0-21-amd64_profile.zip volatility/volatility/plugins/overlays/linux
+```
+
+Attention, le profil crée se nommera **LinuxDebian_5_10_0-21-amd64_profilex64**, la plupart des plugins seront en **linux_bash, linux_pslist** etc. Pour retrouver le nom du profil:
+
+```bash
+python ~/volatility/vol.py --info | grep Debian
 ```
 
 ## Construire les symboles vol3 (pour la partie 3 - plugin GPG)
@@ -69,7 +80,7 @@ Pour plus de clarté, l'historique obtenu a été copié dans [bash_history.txt]
 
 ```bash
 echo -n "RmxhZyBpcyA6IEhTUntNM20wcnlfRjByM25zMWNzXzN2M3J5X1QxbWV9" | base64 -d 
-Flag is : HSR{M3m0ry_F0r3ns1cs_3v3ry_T1me}
+#Flag is : HSR{M3m0ry_F0r3ns1cs_3v3ry_T1me}
 ```
 
 # Flag2

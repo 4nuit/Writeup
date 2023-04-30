@@ -1,9 +1,0 @@
-xss reflected
-#pas eu le temps de finir
-pipedream
-/admin?user=payload
-->ne pas mettre <script> <\script>
-->url encoder
-
-bonus:
-envoyer j'aime cody dans message

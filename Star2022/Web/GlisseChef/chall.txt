@@ -1,3 +1,0 @@
-#Vuln 
-
-File Upload (décompression automatique dans le dossier parent)

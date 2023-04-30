@@ -1,7 +1,0 @@
-Reduire term à 4 lignes
-
-ssh johndog@challenges.hackademint.org -p 32197 -t more
-
-:!v
-
-:e flag.txt

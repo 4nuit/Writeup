@@ -1,6 +1,0 @@
-burp
-forward -> changer la température
--> changeTemp
-modifier debug et value
-
-grep -r flag

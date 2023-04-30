@@ -1,0 +1,509 @@
+{
+    "data": {
+        "Cryptography": [
+            {
+                "category": "Cryptography",
+                "description": "I have encrypted a secret message with this super secure algorithm and put it into a Time Capsule. Maybe nobody can reveal my secret without a time machine...\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/2c629f416716e39036ad8400f0c4f6db/chall.py?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjE4fQ.YzdIfA.FKtJrZJBck05XjYzNo7RA0YQCRg",
+                    "/files/e63d43cd3a742045fda07288fc1f1383/flag.enc?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjE5fQ.YzdIfA.ydIE5UUwugnS7IeVLiZTeq9uELw"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 10,
+                "name": "Time Capsule",
+                "points": 405,
+                "solves": 40
+            },
+            {
+                "category": "Cryptography",
+                "description": "I think this permutation-based image encryption scheme is so secure that nobody can read anything from it!\r\n\r\nAuthor: Yanhu1 & sahuang",
+                "files": [
+                    "/files/e7fc32cc05e8c9fe4d294baca5fdb277/server-player.py?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjIyfQ.YzdIfA.cIC7i9qbgXpqe56wd-jQj9C0cN8"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 13,
+                "name": "Secure Image Encryption",
+                "points": 500,
+                "solves": 2
+            },
+            {
+                "category": "Cryptography",
+                "description": "RCBC is a secure MAC that is robust to all attacks. Try to break it!\r\n\r\nAuthor: sahuang & Yanhu1",
+                "files": [
+                    "/files/365b93b34e862eda6f8af6827acf4822/robust_cbc?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjQ4fQ.YzdIfA.0jec8K_JMNU8D4GTvVd-WSo2oMw"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 43,
+                "name": "Robust CBC",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Cryptography",
+                "description": "I have designed a failproof encryption system with possibly arbitrarily small public keys. I will be as famous as Et Al one day, but only if I can somehow figure out a decryption mechanism...\r\n\r\nAuthor: deut-erium",
+                "files": [
+                    "/files/8d16576a6c94b2e1906274a16a3d0012/source.py?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjIwfQ.YzdIfA.tBWJBOmyQ0act4uCEs3GKFWn4fg"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 11,
+                "name": "FaILProof",
+                "points": 500,
+                "solves": 4
+            },
+            {
+                "category": "Cryptography",
+                "description": "Can you escape the Maze? OwO\r\n\r\nAuthor: Utaha",
+                "files": [
+                    "/files/3f140a991856a964aa81d86fb2ab5684/chall.py?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjM0fQ.YzdIfA.ADpUnILyUXDnopzlBMmXwX2BbAk"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 30,
+                "name": "EZmaze",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "Cryptography",
+                "description": "Welcome to the Diffecient Security Key Database API, for securely and efficiently saving tons of long security keys! Feel *free* to query your security keys, and pay a little to add your own to our state-of-the-art database.\r\n\r\nWe trust our product so much that we even save our own keys here!\r\n\r\nAuthor: deut-erium",
+                "files": [
+                    "/files/3f14e36818eb4225eff2c00172d1aa94/diffecient.py?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjMxfQ.YzdIfA.stEZV9WZv6z4Rg4__UH8Mupb7CM"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 25,
+                "name": "Diffecient",
+                "points": 500,
+                "solves": 0
+            }
+        ],
+        "Forensics": [
+            {
+                "category": "Forensics",
+                "description": "<div style=\"background:#edc752;border-radius:1rem;padding:1rem\">\r\n    <div style=\"margin:0 -1rem .5rem;background:repeating-linear-gradient(-35deg,transparent,transparent 10px,#444463 10px,#444463 20px);font-weight:700\">\r\n        <span style=\"margin:0 auto;display:block;width:fit-content;padding:0 1rem;background:#edc752\">\u26a0 WARNING \u26a0</span>\r\n    </div>\r\n    Consider using a fresh virtual machine for this challenge, as you may risk losing your data. We are not responsible for any damages caused.\r\n</div>\r\n\r\n*Customer*: Please help me... I don\u2019t know what I did but now I can\u2019t access my personal files anymore!\r\n\r\n*Investigator*: It looks like they were encrypted. Have you ever backed them up before?\r\n\r\n*Customer*: Yes, I had some links, actually! But they were encrypted as well, so I\u2019m not sure what to do now.\r\n\r\nAttachment md5sum: `60937547d80207b1b4f2d4174a8d719a`\r\n\r\nAuthor: BattleMonger",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 19,
+                "name": "Blind Infection 1",
+                "points": 499,
+                "solves": 5
+            },
+            {
+                "category": "Forensics",
+                "description": "Miku has finally finished her assignment and is ready to submit \u2013 but for some reason, the school requires all assignments to be submitted as `.xps` files. Miku found a converter online and used the converted file for submission. The file looked good at first, but it seems as if there\u2019s something broken in the converter. Can you help her figure out what is wrong?\r\n\r\n<div style=\"background:#75fbde;border-radius:1rem;padding:1rem\"><b>\u2756 Note</b><br/>This challenge shares the same file as <em>flag Mono</em>.</div>\r\n\r\nAuthor: pamLELcu",
+                "files": [
+                    "/files/42f2f5212fb77e60831c8bc3625f14b4/Assignment-broken.xps?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjEzfQ.YzdIfA.ucL5iEgi-63SKLZjEWwCq8LcRyc"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 5,
+                "name": "Broken Converter",
+                "points": 480,
+                "solves": 19
+            },
+            {
+                "category": "Forensics",
+                "description": "We recently got hold of a cryptocurrency scammer and confiscated his laptop.\r\n\r\nAnalyze the memdump. Submit the string you find wrapped with `SEKAI{}`.\r\n\r\nAttachment md5sum: `4be69c88e6f19dd9c9f8e6c52bc93c28`\r\n\r\nAuthor: BattleMonger",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 21,
+                "name": "Symbolic Needs 1",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Forensics",
+                "description": "When writing the assignment, Miku used a font called *flag Mono*. Despite it looking just like a regular monospaced font, it claims itself to be \u201cstylistic\u201d in various ways. \r\n  \r\n\u201cPerhaps there\u2019s something special about it\u201d, Miku thought.\r\n\r\n<div style=\"background:#75fbde;border-radius:1rem;padding:1rem\"><b>\u2756 Note</b><br/>This challenge shares the same file as <em>Broken Converter</em>.</div>\r\n\r\nAuthor: pamLELcu",
+                "files": [
+                    "/files/70e91b2ce289ea2d48ef1b6981712fa8/Assignment-broken.xps?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjE0fQ.YzdIfA.1XihVgKPt52aJrvO_mBcj-wFVbw"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 6,
+                "name": "flag Mono",
+                "points": 500,
+                "solves": 3
+            }
+        ],
+        "Misc": [
+            {
+                "category": "Misc",
+                "description": "\u2013 Hey Miku, here\u2019s [the manual](https://www.bombmanual.com/). Can you help me port the game to consoles?  \r\n\u2013 Sure, no problem.\r\n\r\n_[ 1 week later... ]_\r\n\r\n\u2013 Hey Miku, how\u2019s the porting going?  \r\n\u2013 I just finished it today, wanna take a look?  \r\n\u2013 Sure, which console did you port it to?  \r\n\u2013 Huh...? What do you mean \u201cwhich console\u201d?\r\n\r\nAuthor: pamLELcu",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 37,
+                "name": "Console Port",
+                "points": 100,
+                "solves": 90
+            },
+            {
+                "category": "Misc",
+                "description": "We created a simple Rhythm Game for you! But you have to play in blind mode this time :o \r\n\r\nTry to achieve <span style=\"\r\n    font-weight: 800;\r\n    background: linear-gradient(to bottom,#ff6ef9,#6f98ff,#168468);\r\n    color: transparent;\r\n    background-clip: text;\r\n    -webkit-background-clip: text;\r\n\">ALL PERFECT</span> 3 times to prove yourself =D\r\n\r\n`Testnet LINK` is available from https://faucets.chain.link/goerli\r\n\r\n`Testnet ETH` is available from https://goerlifaucet.com/ or faucets listed at https://faucetlink.to/goerli\r\n\r\nAuthor: Yanhu1",
+                "files": [
+                    "/files/cae87bd3f4fb38bea7123ea6b222ffd1/contracts.tar.gz?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjMzfQ.YzdIfA.YJ6t9uAQiLJCi2uQ91haPKqzMbg"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 27,
+                "name": "Random Song",
+                "points": 500,
+                "solves": 2
+            },
+            {
+                "category": "Misc",
+                "description": "Welcome to SekaiCTF! Flags will be in format `SEKAI\\{[\\x20-\\x7e]+\\}`.\r\n\r\nJoin our Discord for admin support and challenge updates. Flag is in `#announcement` channel.\r\n\r\n![A sticker of Hatsune Miku with a text above that reads \u201cWelcome!\u201d](https://puu.sh/JjUug/bdcf43eebc.png)",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 1,
+                "name": "\u25b6 Sanity Check",
+                "points": 39,
+                "solves": 361
+            },
+            {
+                "category": "Misc",
+                "description": "Get `/root/flag.txt` in the Borpa Host!\r\n\r\nAuthor: ElleuchX1",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 39,
+                "name": "Borpa",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Misc",
+                "description": "- <input type=\"checkbox\" checked onchange=\"((e)=>{e.target.checked = !e.target.checked})(event)\"> One extra bit will double the 8 colors you already have, but ain\u2019t these new colors too similar to the old ones?\r\n- <input type=\"checkbox\"  onchange=\"((e)=>{e.target.checked = !e.target.checked})(event)\"> ?\r\n- <input type=\"checkbox\"  onchange=\"((e)=>{e.target.checked = !e.target.checked})(event)\"> ?\r\n- <input type=\"checkbox\"  onchange=\"((e)=>{e.target.checked = !e.target.checked})(event)\"> ?\r\n\r\nAuthor: pamLELcu",
+                "files": [
+                    "/files/f10c39fdf88429b067e858f688b4170b/Matryoshka.png?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjI5fQ.YzdIfA.BJrund-h76g8YrFDz6k4vMxf3M0"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 24,
+                "name": "Matryoshka",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Misc",
+                "description": "Someone sent this file to me, claiming he got it from a _SEKAI_ where the _palette_ is not _colorful_ but _purple_. I had no idea what he was talking about \u2013 I only find it really _sus_.\r\n\r\nAuthor: pamLELcu",
+                "files": [
+                    "/files/78a0b5017161735c8af0ba9b339e783b/SEKAI.sus?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjEyfQ.YzdIfA.XT_B1kpCgbHjwitHgRl_nsCYNxg"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 3,
+                "name": "Sus",
+                "points": 491,
+                "solves": 13
+            }
+        ],
+        "PPC": [
+            {
+                "category": "PPC",
+                "description": "Welcome to *Project Sekai Online Judge*!\r\n\r\n<div style=\"background:#75fbde;border-radius:1rem;padding:1rem\"><b>\u2756 Note</b><br/>For simplicity, sample input <code>1.in</code> is given in this challenge.</div>\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/6f44f1a22a09432a6d2199f2f3db4207/1.in?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjM3fQ.YzdIfA.OPofpthRTJj6BXk8tbB0hL1haSA",
+                    "/files/a527341ea5e116c0e418f98c4085722f/Lets_play_osumania.pdf?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjQwfQ.YzdIfA.YCtqVIzDMw_xOsNmaZuAVwY4ntA"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 34,
+                "name": "Let\u2019s Play Osu!Mania",
+                "points": 158,
+                "solves": 75
+            },
+            {
+                "category": "PPC",
+                "description": "Can you keep all the numbers in your brain?\r\n\r\nAuthor: pamLELcu",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 17,
+                "name": "Mind Calculator",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "PPC",
+                "description": "Welcome to *Project Sekai Online Judge*!\r\n\r\nAuthor: Radewoosh",
+                "files": [
+                    "/files/c147c9ddd9c033ce34c0eb176f89e7a1/Pafs.pdf?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjM5fQ.YzdIfA.bHHMuxY0h-uWXm1FIaRB-pkeDu0"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 35,
+                "name": "Pafs",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "PPC",
+                "description": "Welcome to *Project Sekai Online Judge*!\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/2997d651221dbb090f2d69a2a7740eec/Electric_Box.pdf?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjQxfQ.YzdIfA.bXbNfexrs7krP6OiUWbikQ8tFsQ"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 36,
+                "name": "Electric Box",
+                "points": 500,
+                "solves": 2
+            },
+            {
+                "category": "PPC",
+                "description": "\u2013 Hey Miku, since you\u2019ve already done the porting, can you write an AI solving the game for me?  \r\n\u2013 Well, it shouldn\u2019t be hard. I\u2019ll give it a try.  \r\n\u2013 Cool. Here\u2019s the game you need to solve. I made some changes so that you won\u2019t cheat manually.  \r\n\u2013 Hmm... \r\n\r\nAuthor: pamLELcu",
+                "files": [],
+                "hints": [
+                    "Only \u201cKeypad\u201d, \u201cWho\u2019s on first\u201d, \u201cMemory\u201d, \u201cWires\u201d, \u201cButton\u201d, and \u201cPassword\u201d modules are ported. No other module will appear on the bomb.",
+                    "No modules or other components will appear on the back, left and right sides of the bomb. Serial number, indicators, and batteries will only appear on the top and bottom sides of the bomb."
+                ],
+                "id": 38,
+                "name": "Console Port Pro",
+                "points": 500,
+                "solves": 0
+            }
+        ],
+        "Pwn": [
+            {
+                "category": "Pwn",
+                "description": "I made this installer for a \u201cHello World\u201d program. Can you try it?\r\n\r\n<div style=\"background:#75fbde;border-radius:1rem;padding:1rem\"><b>\u2756 Note</b><br/>Flag filename is not in regular format.</div>\r\n\r\nAuthor: Jonathan",
+                "files": [
+                    "/files/5cfb7f7da96c9753d2060ff7d79c6ef9/setup.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjI1fQ.YzdIfA.RNchxk3URYpRvUwIaA8eNqyTyyg"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 16,
+                "name": "Hello World Setup",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Pwn",
+                "description": "![A meme picture of four rows. Small brain, Basic ret2libc. Medium brain, No leaks and full relro. Large brain, libc 2.35 and no gadgets. Cosmo brain, Gets plus pop rdi.](https://puu.sh/JlYbt/8458677480.jpg)\r\n\r\n<div style=\"background:#75fbde;border-radius:1rem;padding:1rem\"><b>\u2756 Note</b><br/>Flag is in format <code>SEKAI\\{[A-Z_]+\\}</code>. Bruteforcing is not required. Rate limit is set up for this challenge.</div>\r\n\r\nAuthor: 4n0nym4u5",
+                "files": [
+                    "/files/fc5a3c6f3af0dc0b8d3fa6d7a9f5f8ab/gets.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjUzfQ.YzdIfA.NszUf21vi07chwPY88V3ArVohr8"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 40,
+                "name": "gets",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Pwn",
+                "description": "I got lost in my memory. Please save me!\r\n\r\nAuthor: Jonathan",
+                "files": [
+                    "/files/019b647bda059bf3e3ead2d4cf52850f/saveme.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjIzfQ.YzdIfA.3vtVNRdHRMPMUF84M0ZrIdSVq8Y"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 14,
+                "name": "Save Me",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "Pwn",
+                "description": "You are given an unweighted graph with <var>N</var> nodes and <var>K</var> edges. Let <var>P</var> and <var>Q</var> be two nodes in the graph. You are asked to find the shortest path between the two nodes.\r\n\r\n**Input** <br>\r\nEach test contains multiple test cases. The first line contains a single integer <var>T</var> - the number of test cases. Description of the test cases follows.\r\n\r\nThe first line of the input contains two unsigned integers <var>N</var>  and <var>K</var> - the number of nodes and edges respectedly.\r\n\r\nEach of the next <var>K</var> lines contains two unsigned integers <var>V</var> and <var>U</var> - the description of an edge.\r\n\r\nThe last line contains two unsigned integers <var>P</var> and <var>Q</var> - the to and from nodes.\r\n\r\n**Output**  <br>\r\nShell\r\n\r\nAuthor: Zafirr",
+                "files": [
+                    "/files/5f262c92ae79e145837536593f4205aa/dist.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjM1fQ.YzdIfA.pXQRlT4_NN0tPOMOGg2ZGw_XZ2c"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 31,
+                "name": "BFS",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Pwn",
+                "description": "Oh no! My blockchain gacha fungible tokens program has been impacted by some hacker! Can you steal my money back for me?\r\n\r\nAuthor: Triacontakai",
+                "files": [
+                    "/files/228bab298023509491cc3ad98a6ee7ee/gft-player.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjUyfQ.YzdIfQ.SZ8P2oVnAAJ77ua_JAMqXSnvtSs"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 45,
+                "name": "GFT",
+                "points": 500,
+                "solves": 0
+            }
+        ],
+        "Reverse": [
+            {
+                "category": "Reverse",
+                "description": "Living for the future is more important than trying to avenge the past. \r\n\r\nAttachment password: `novirus`\r\n\r\nAuthor: joezid",
+                "files": [
+                    "/files/c855e491f76eb1850c23fcde5796a0ec/Berserk.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjU5fQ.YzdIfQ.QSc8zulg7D2Qj9D6VNSjsJceL2M"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 48,
+                "name": "Berserk",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Reverse",
+                "description": "Welcome to the second lab. It seems that you're having some trouble with setting up the lab environment... Can you find the passcode and start the lab?\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/3b5c34c4c5a2ab8646974c3472ed6609/Matrix_Lab_2.exe?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjE2fQ.YzdIfQ.RVKrzgIPOCtolqQwkBhYW9yGK04"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 8,
+                "name": "Matrix Lab 2",
+                "points": 499,
+                "solves": 6
+            },
+            {
+                "category": "Reverse",
+                "description": "Final lab of this semester... If you can crack the matrix I'm sure you will get an A on the final exam. Good luck!\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/f80ea12185faadf8a88b6b0a3d19180d/matrix_lab_3?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjQ1fQ.YzdIfQ.M5I5Gnry-lrDeihy_l_mB-D1-tM"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 9,
+                "name": "Matrix Lab 3",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "Reverse",
+                "description": "A program of `chicken`...\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/03bfe0c45bff20cfbe549e452eb5ce50/chicken?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjQ0fQ.YzdIfQ.y-8n7KOqp7EC5SujyHIl71iIXFA"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 18,
+                "name": "Baby Chicken",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Reverse",
+                "description": "Welcome to the first lab of Course ML10001 from Sekai University! The Lab 1 assignment should be pretty easy...\r\n\r\nAuthor: sahuang",
+                "files": [
+                    "/files/1ae35f0ae3e8cb893705461b0929af00/Matrix_Lab_1.class?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjE1fQ.YzdIfQ.43w6O09Xbr8lQOb0xY9GHDyhWFk"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 7,
+                "name": "Matrix Lab 1",
+                "points": 461,
+                "solves": 26
+            }
+        ],
+        "Web": [
+            {
+                "category": "Web",
+                "description": "Hey it's our Sekai Game \u2013 try to make it start!!\r\n\r\nAuthor: bwjy",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 28,
+                "name": "Sekai Game Start",
+                "points": 500,
+                "solves": 3
+            },
+            {
+                "category": "Web",
+                "description": "Safelist\u2122 is a completely safe list site to hold all your important notes! I mean, look at all the security features we have, we must be safe!\r\n\r\nAuthor: Strellic",
+                "files": [
+                    "/files/16d422d8df02e841fdedfa8198fb959a/safelist.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjU2fQ.YzdIfQ.CYai1kqvCG38jeFeMLIkEOH_s-k"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 47,
+                "name": "Safelist",
+                "points": 500,
+                "solves": 0
+            },
+            {
+                "category": "Web",
+                "description": "![\ud83e\udd80](https://puu.sh/JmWH8/b81d8ddf87.gif)\r\n\r\nAuthor: Strellic",
+                "files": [
+                    "/files/56d2ae7ac29d418b1b98b407b6ec64fb/crabcommodities.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjU1fQ.YzdIfQ.jZA_unHoQJjSHiCzmkrmAONu85Y"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 42,
+                "name": "Crab Commodities",
+                "points": 500,
+                "solves": 1
+            },
+            {
+                "category": "Web",
+                "description": "Come and read poems in the bottle.\r\n\r\nAuthor: bwjy",
+                "files": [],
+                "hints": [
+                    "-"
+                ],
+                "id": 29,
+                "name": "Bottle Poem",
+                "points": 488,
+                "solves": 15
+            },
+            {
+                "category": "Web",
+                "description": "Every CTF has one, here's your obligatory calculator web challenge!\r\n\r\nAuthor: Strellic",
+                "files": [
+                    "/files/6fd181ab29215129da88697688627006/obligatory-calc.zip?token=eyJ1c2VyX2lkIjoxMzkwLCJ0ZWFtX2lkIjo0NjMsImZpbGVfaWQiOjU4fQ.YzdIfQ.8e6C6QQf-mENrU3a1G5e6p03j9g"
+                ],
+                "hints": [
+                    "-"
+                ],
+                "id": 41,
+                "name": "Obligatory Calc",
+                "points": 500,
+                "solves": 0
+            }
+        ]
+    },
+    "title": "Project SEKAI CTF 2022",
+    "url": "https://ctf.sekai.team"
+}

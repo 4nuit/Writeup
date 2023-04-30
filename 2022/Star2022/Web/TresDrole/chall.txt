@@ -1,0 +1,9 @@
+#index.js
+vérif du pin en js
+-> breakpoint sur entrée = 13
+
+appuyer sur entrée
+
+F11 -> source.js
+
+rentrer le pin

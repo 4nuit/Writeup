@@ -1,0 +1,15 @@
+"""
+     -t @,%^
+              Specifies a pattern, eg: @@god@@@@ where the only the @'s, ,'s, %'s, and ^'s will change.
+              @ will insert lower case characters
+              , will insert upper case characters
+              % will insert numbers
+              ^ will insert symbols
+#crunch 14 14 -t ,@@@@@@@,%%%^^ > list.txt
+"""
+
+crunch 3 3 -t %%% -o list.txt
+
+suffix à rockyou
+
+awk '$0=$0"@#"' list.txt > list2.txt

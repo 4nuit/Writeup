@@ -1,0 +1,7 @@
+Consigne:
+/*
+Use the artifacts from Alabaster Snowball to analyze this attack on the Boria mines. Most of the traffic to this site is nice, but one IP address is being naughty! Which is it? Visit Sparkle Redberry in the Web Ring for hints. 
+*/
+
+cat weberror.log | grep POST | head -n 2
+18.222.86.32 

@@ -1,0 +1,42 @@
+1. What month/day/year did the attack take place? For example, 09/05/2021.
+: 12/24/2022
+#less powershell*
+
+2. An attacker got a secret from a file. What was the original file's name?
+: Recipe
+
+#less powershell* | grep Get-Content
+
+3. The contents of the previous file were retrieved, changed, and stored to a variable by the attacker. This was done multiple times. Submit the last full PowerShell line that performed only these actions.
+: $foo = Get-Content .\Recipe| % {$_ -replace 'honey', 'fish oil'}
+
+#less powershell* ; puis recherche avec /Get-Content
+
+4. After storing the altered file contents into the variable, the attacker used the variable to run a separate command that wrote the modified data to a file. This was done multiple times. Submit the last full PowerShell line that performed only this action.
+: $foo | Add-Content -Path 'Recipe'
+
+#less powershell*; puis recherche avec /Add-Content
+
+5. The attacker ran the previous command against a file multiple times. What is the name of this file?
+: Recipe.txt
+
+6. Where any files deleted?
+: Yes
+
+7. Was the original file (from question 2) deleted? (Yes/No)
+: No
+
+8. What is the Event ID of the log that shows the actual command line used to delete the file?
+: 4104 
+
+#less powershell* ; puis recherche avec /del
+
+9. Is the secret ingredient compromised (Yes/No)?
+: Yes
+
+10. What is the secret ingredient?
+: honey
+
+# less powershell*; puis recherche avec /Get-Content, on tombe sur la commande:
+
+$foo = Get-Content .\Recipe| % {$_ -replace 'honey', 'fish oil'} $foo | Add-Content -Path 'recipe_updated.txt'

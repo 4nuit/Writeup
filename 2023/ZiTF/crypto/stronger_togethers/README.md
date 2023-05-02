@@ -28,7 +28,7 @@ result_image.save("result.jpg")
 
 Mais le résultat indique que le flag sera simplement le xor de 2 images:
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/crypto/stronger_togethers/result.jpg)
+![](./result.jpg)
 
 ## Xor 2
 
@@ -55,4 +55,4 @@ On constate que 4 images (donc 2 combinaisons sur 8) produisent une partie du fl
 
 On peut concaténer le résultat du xor de 2 avec 4 et 1 avec 3:
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/crypto/stronger_togethers/flag.png)
+![](./flag.png)

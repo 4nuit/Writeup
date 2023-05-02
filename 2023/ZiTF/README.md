@@ -2,8 +2,7 @@
 
 ## Solution des challenges
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/final.png)
-
+![](./final.png)
 
 Note pour moi même:
 

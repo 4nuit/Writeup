@@ -8,7 +8,7 @@
 
 Pour ce challenge on peut utiliser Ghidra.
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/reverse/ghidra.png)
+![](./ghidra.png)
 
 Dans la liste des fonctions, on regarde en priorité main.
 undefined8 main(void)
@@ -60,7 +60,7 @@ void check_pass(char *param_1)
 On découvre donc une comparaison avec le mot de passe, qui affiche en fait le flag du challenge si
 le mot de passe est correct. On se connecte donc en TCP avec netcat au challenge:
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/reverse/check.png)
+![](./check.png)
 
 C’est dans la poche!
 
@@ -137,7 +137,7 @@ print(flag)
 Ce qui donne le pass I4amTh3D4nJ3r
 On vérifie!
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/ZiTF/reverse/walter.png)
+![](./walter.png)
 
 Le flag est doncZiTF{I4amTh3D4nJ3r}
 

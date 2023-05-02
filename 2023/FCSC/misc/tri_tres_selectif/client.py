@@ -26,17 +26,18 @@ def verifier():
 		print(io.recvline().strip().decode())
 		print(io.recvline().strip().decode())
 
-def trier(N):
-    # Tri par sélection
-    for i in range(N-1):
-        # Recherche de l'élément minimum dans le sous-tableau non trié
-        min_idx = i
-        for j in range(i+1, N):
-            if comparer(j, min_idx):
-                min_idx = j
-        # Échange de l'élément minimum avec l'élément en première position du sous-tableau non trié
-        if min_idx != i:
-            echanger(i, min_idx)
+def trier(gauche, droite):
+	if gauche < droite:
+		pivot = droite
+		i = gauche - 1
+		for j in range(gauche, droite):
+			if comparer(j, pivot):
+				i += 1
+				echanger(i, j)
+		echanger(i+1, droite)
+		pivot = i + 1
+		trier(gauche, pivot-1)
+		trier(pivot+1, droite)
 
 # Ouvre la connexion au serveur
 io = remote(HOST, PORT)
@@ -45,7 +46,7 @@ io = remote(HOST, PORT)
 N = longueur()
 
 # Appel de la fonction de tri que vous devez écrire
-trier(N)
+trier(0,N-1)
 
 # Verification
 verifier()

@@ -66,3 +66,7 @@ verifier()
 # Fermeture de la connexion
 io.close()
 ```
+
+La complexité temporelle du tri rapide est en moyenne O(n log n) et dans le pire des cas O(n^2).
+
+![](./flag.png)

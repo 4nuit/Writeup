@@ -90,7 +90,7 @@ Voir notamment `rsa` dans `side_chan`.
 | [Dystylosaurus](https://fcsc2023.noderyos.dev/dystylosaurus) | :x:  |
 | ![La gazette de Windows](./intro/windows)  | :heavy_check_mark:  |
 | ![Tri sélectif](./intro/tri) | :heavy_check_mark:  |
-| SPAnosaurus | :x:  |
+| [SPAnosaurus](./intro/spanausorus) | :x:  |
 | ![Comparaison](./intro/comparaison) | :heavy_check_mark:  |
 | ![rot13](./intro/rot13) | :heavy_check_mark: |
 | ![T'es lent](./intro/tlent) | :heavy_check_mark: |

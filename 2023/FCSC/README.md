@@ -39,8 +39,8 @@ Voir notamment `rsa` dans `side_chan`.
 | [Hola Amigo](https://ctf.0xff.re/2023/fcsc-2023/hola-amigo) | :x:  |
 | ------ | -------- |
 | **Crypto** | Résolu |
-| ![Elliptic Addventure](./crypto/elliptic_adventure)  | :x:  |
-| [Elliptic Addrenaline](./crypto/elliptic_adventure/) | :x:  |
+| ![Elliptic Addventure](./crypto/elliptic_addventure)  | :white_check_mark:  |
+| [Elliptic Addrenaline](./crypto/elliptic_addrenaline/) | :x:  |
 | [Le hash qui rit](https://github.com/htmb-bot/CTF/blob/main/Lehashquirit.md)  | :x:  |
 | [Cry Me a River](https://github.com/arusson/fcsc2023-write-up) | :x:  |
 | Pain in the Hash | :x:  |
@@ -49,10 +49,10 @@ Voir notamment `rsa` dans `side_chan`.
 | [Black Block](https://github.com/AugustinBariant/Write-ups/tree/master/FCSC2023/Black%20Block) | :x:  |
 | ------ | -------- |
 | **Forensic** | Résolu |
-| ![Ransomémoire 0/3 [Dump](https://mega.nz/file/9P0ikKbA#1oqmduFzriV5oU-i3U41XVo_3IrtR8OkVbaHEhSS2Mw)](./forensic/ransommem)  | :heavy_check_mark:  |
+| ![Ransomémoire 0/3](./forensic/ransommem) [Dump](https://mega.nz/file/9P0ikKbA#1oqmduFzriV5oU-i3U41XVo_3IrtR8OkVbaHEhSS2Mw)  | :heavy_check_mark:  |
 | [Ransomémoire 1,2,3/3](https://blog.itarow.xyz/posts/ransomemoire/) | :x: |
 | ![Weird Shell](./forensic/weird_shell) | :heavy_check_mark:  |
-| [APT Style 1-7/7 [Iso](https://github.com/0x14mth3n1ght/Writeup) ](https://github.com/21repierre/FCSC-2023/tree/master/forensics/APT)  | :x:  |
+| [APT Style 1-7/7](https://github.com/21repierre/FCSC-2023/tree/master/forensics/APT) [Iso](https://mega.nz/file/hHcm1bZY#jYqe2Xx6slaXb8TS_tuJJBxpxdb5yUk5YBBtpJK5QSA) | :x:  |
 | Sadmind | :x:  |
 | [Baleine sous graviers](https://blog.itarow.xyz/posts/baleine_sous_graviers/) | :x:  |
 | ------ | -------- |

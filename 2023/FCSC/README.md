@@ -49,10 +49,10 @@ Voir notamment `rsa` dans `side_chan`.
 | [Black Block](https://github.com/AugustinBariant/Write-ups/tree/master/FCSC2023/Black%20Block) | :x:  |
 | ------ | -------- |
 | **Forensic** | Résolu |
-| ![Ransomémoire 0/3](./forensic/ransommem)  | :heavy_check_mark:  |
+| ![Ransomémoire 0/3 [Dump](https://mega.nz/file/9P0ikKbA#1oqmduFzriV5oU-i3U41XVo_3IrtR8OkVbaHEhSS2Mw)](./forensic/ransommem)  | :heavy_check_mark:  |
 | [Ransomémoire 1,2,3/3](https://blog.itarow.xyz/posts/ransomemoire/) | :x: |
 | ![Weird Shell](./forensic/weird_shell) | :heavy_check_mark:  |
-| [APT Style 1-7/7](https://github.com/21repierre/FCSC-2023/tree/master/forensics/APT)  | :x:  |
+| [APT Style 1-7/7 [Iso](https://github.com/0x14mth3n1ght/Writeup) ](https://github.com/21repierre/FCSC-2023/tree/master/forensics/APT)  | :x:  |
 | Sadmind | :x:  |
 | [Baleine sous graviers](https://blog.itarow.xyz/posts/baleine_sous_graviers/) | :x:  |
 | ------ | -------- |

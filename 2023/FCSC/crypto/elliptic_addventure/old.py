@@ -1,22 +1,3 @@
-## Notes  : non réussi
-
-Note perso, première fois que je m'attaque aux ECC.
-
-Utiliser une debian-like pour `sage`
-
-```bash
-sudo apt install sagemath
-```
-
-# Points
-
-Nous avons dans output.txt les coordonnées des points `A+B` et `A-B`.
-Il nous faut celles de `A` et `B` puis "inverser".
-
-On sait que les opérations de type `Point Addition` sont transitives, le plus dur est d'inverser les coordonnées de A et B pour flag.
-Voici une ébauche de script que j'ai abandonné:
-
-```python
 from Crypto.Util.number import long_to_bytes
 from sage.all import *
 
@@ -38,4 +19,3 @@ while (p**k - 1) % E.order():
         k += 1
 
 print(k)
-```

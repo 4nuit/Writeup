@@ -10,7 +10,7 @@ Voir notamment `rsa` dans `side_chan`.
 | ------ | -------- |
 | **Misc** | Résolu |
 | ------ | -------- |
-| ![Tri très sélectif](./misc/tri_tres_selectif) | :x:  |
+| ![Tri très sélectif](./misc/tri_tres_selectif) | :white_check_mark:  |
 | [Zéro pointé](https://ofenomeno.xyz/FR-FCSC2023-Zero-Pointe-WriteUp)  | :x:  |
 | [Des p'tits trous](https://fcsc2023.noderyos.dev/des_p_tits_trous) | :x:  |
 | La base | :x:  |
@@ -57,9 +57,9 @@ Voir notamment `rsa` dans `side_chan`.
 | [Baleine sous graviers](https://blog.itarow.xyz/posts/baleine_sous_graviers/) | :x:  |
 | ------ | -------- |
 | **Hardware** | Résolu |
-| [canflag](https://fcsc2023.noderyos.dev/canflag)  | :x:  |
+| [canflag](https://kktus.gitlab.io/writeups/fcsc-2023/canflag/)  | :x:  |
 | ![Fibonacci](./hardware/fibonacci) | :heavy_check_mark:  |
-| Au Boolot  | :x:  |
+| [Au Boolot](https://kktus.gitlab.io/writeups/fcsc-2023/au-boolot/)  | :x:  |
 | [keypadbol](https://fcsc2023.noderyos.dev/keypadbol) | :x:  |
 | [PALeoTV](https://github.com/loulous24/FCSC/blob/master/FCSC2023/PALeoTV.md) | :x:  |
 | [Sous marin](https://github.com/loulous24/FCSC/blob/master/FCSC2023/Sous_marin.md) | :x:  |
@@ -77,7 +77,7 @@ Voir notamment `rsa` dans `side_chan`.
 | **Web** | Résolu |
 | ![ENISA Flag Store 1/2](https://github.com/yaceno/FCSC-2023/tree/main/ENISA_Flag_Store_1_2)  | :x:  |
 | ![Salty Authentication](./web/salty) | :heavy_check_mark:  |
-| [ENISA Flag Store 2/2](./web/enisa)  | :x:  |
+| [ENISA Flag Store 2/2](./web/enisa)  | :white_check_mark:  |
 | [Hello from the inside](https://keyzen.net/posts/fcsc/2023/web/hellofromtheinside/) | :x:  |
 | [Tweedle Dum](https://thbz.fr/posts/fcsc-2023-tweedle-dum/) | :x:  |
 | ![Peculiar Caterpillar](https://github.com/Lexterl33t/writeup_web_fcsc_2023/blob/master/writeup_peculiar.md) | :x:  |
@@ -95,6 +95,8 @@ Voir notamment `rsa` dans `side_chan`.
 | ![rot13](./intro/rot13) | :heavy_check_mark: |
 | ![T'es lent](./intro/tlent) | :heavy_check_mark: |
 | ![Aaarg](./intro/aaarg) | :heavy_check_mark: |
+
+:white_check_mark: : refait après coup
 
 ## Challenges utilisant la machine virtuelle
 

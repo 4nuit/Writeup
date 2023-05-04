@@ -11,7 +11,7 @@ Voir notamment `rsa` dans `side_chan`.
 | **Misc** | Résolu |
 | ------ | -------- |
 | ![Tri très sélectif](./misc/tri_tres_selectif) | :white_check_mark:  |
-| [Zéro pointé](https://ofenomeno.xyz/FR-FCSC2023-Zero-Pointe-WriteUp)  | :x:  |
+| [Zéro pointé](https://ofenomeno.xyz/FR-FCSC2023-Zero-Pointe-WriteUp)  | :white_check_mark:  |
 | [Des p'tits trous](https://fcsc2023.noderyos.dev/des_p_tits_trous) | :x:  |
 | La base | :x:  |
 | [Rechatdrage](https://github.com/StroppaFR/CTF-Writeups/tree/master/2023/FCSC2023/misc/Rechatdrage) | :x: |
@@ -40,7 +40,7 @@ Voir notamment `rsa` dans `side_chan`.
 | ------ | -------- |
 | **Crypto** | Résolu |
 | ![Elliptic Addventure](./crypto/elliptic_addventure)  | :white_check_mark:  |
-| [Elliptic Addrenaline](./crypto/elliptic_addrenaline/) | :x:  |
+| [Elliptic Addrenaline](./crypto/elliptic_addrenaline/) | :white_check_mark:  |
 | [Le hash qui rit](https://github.com/htmb-bot/CTF/blob/main/Lehashquirit.md)  | :x:  |
 | [Cry Me a River](https://github.com/arusson/fcsc2023-write-up) | :x:  |
 | Pain in the Hash | :x:  |
@@ -75,7 +75,7 @@ Voir notamment `rsa` dans `side_chan`.
 | [ktruc](https://github.com/voydstack/FCSC2023/blob/main/ktruc/ktruc.md) | :x: |
 | ------ | -------- |
 | **Web** | Résolu |
-| ![ENISA Flag Store 1/2](https://github.com/yaceno/FCSC-2023/tree/main/ENISA_Flag_Store_1_2)  | :x:  |
+| ![ENISA Flag Store 1/2](https://github.com/yaceno/FCSC-2023/tree/main/ENISA_Flag_Store_1_2)  | :white_check_mark:  |
 | ![Salty Authentication](./web/salty) | :heavy_check_mark:  |
 | [ENISA Flag Store 2/2](./web/enisa)  | :white_check_mark:  |
 | [Hello from the inside](https://keyzen.net/posts/fcsc/2023/web/hellofromtheinside/) | :x:  |

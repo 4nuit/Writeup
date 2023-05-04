@@ -29,14 +29,35 @@ ordre = E.order() # 578960446186580977117854925043439539268569308750392608480156
 
 ![](./factor.png)
 
-k//8 est premier donc son inverse h vérifie $$2h = 1+ k//8$$
+k//8 est premier donc son inverse h vérifie **(1)** $$2h = 1+ k//8$$ 
 
-## Retrouver A et B:
+## Inverser:
 
 Pour trouver les bytes correspondant à chaque moitié de flag, on peut `multiplier les points par l'inverse du groupe`.
 
-$$(2.A).h = A.(2.h) = A.(k + 1) = A.k + A = A$$
+Vu que E est cyclique d'ordre `8k`, on peut écrire (0< x < 8k) $$A = G.x$$ 
 
+On possède donc: $$2.A = G(2.x)$$
+
+D'où, d'après **(1)**:
+
+$$(2.A).h = G.(2.h.x) = G.(x+kx)$$ 
+
+Si par chance `x = 8q`:
+
+$$(2.A).h = G.(x+8kq) = G.x + (G.8kq ) = A + 0 = A$$
+
+## Retrouver A et B (cas réel: non multiple de 8)
+
+Si l'on écrit $$x = 8q +r$$
+
+On a: $$(2.A).h = G.(x+k(8q+r)) = G.x + (G.8kq ) +G.r = A + 0 + G.kr$$
+
+D'où
+
+$$(2.A).h - G.kr = A$$
+
+Ainsi on peut boucler sur `r` pour trouver A:
 
 ```python
 from Crypto.Util.number import long_to_bytes

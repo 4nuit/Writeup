@@ -12,21 +12,21 @@ sudo apt install sagemath
 
 ![](./enonce.png)
 
-Deux points A et B sont présents sur une courbe elliptique d’équation $$(E) : y2 = x3 + ax + b[p]$$
+Deux points A et B sont présents sur une courbe elliptique d’équation $$(E) : y2 = x3 + ax + b[p]$$. E est un [groupe](https://www.bibmath.net/dico/index.php?action=affiche&quoi=./g/groupe.html) qui est de plus [fini](https://fr.wikipedia.org/wiki/Groupe_fini) comme Z/pZ pour RSA.
 
 Dans le fichier `output.txt`, les coordonnées des points A + B et A − B sont indiqués. L’objectif est de retrouver les coordonnées des points A et B, qui chiffrent le flag.
 
-On sait que les opérations de type `Point Addition` sont transitives, le plus dur est d'inverser les coordonnées de A et B pour flag.
+On sait qu'on peut additionner les points dans ce groupe, le plus dur est d'inverser les coordonnées de A et B pour flag (pas de multiplication/division des coordonnées).
 Une ébauche de script que j'ai abandonné est dans `old.py`.
 
 ## Inverser
 
 On se sert de 2 propriétés:
 
-- E est un groupe **cyclique**
-- L’**ordre** de (E) , k, est un nombre **premier**
+- E est un groupe [**cyclique**](https://www.techno-science.net/glossaire-definition/Groupe-cyclique.html) (comme l'ensemble des permutations ou Z/pZ (si p premier))
+- L’**ordre** de (E) , k, est un nombre **premier** (en gros pour un point P c'est le plus petit entier qui vérifie $$P^k = 0$$ où 0 est le point à l'infini)
 
-k est premier donc son inverse h vérifie $$2h = 1+ k$$
+k est premier donc son inverse h vérifie $$2h = 1+ k$$ : en fait on veut **diviser par 2** : on cherche l'inverse h tq $$2.h = 1 [k]$$
 
 ## Retrouver A et B:
 
@@ -35,6 +35,7 @@ Tous les points du groupes sont **générateurs** car k est premier.
 
 $$(2.A).h = A.(2.h) = A.(k + 1) = A.k + A = A$$
 
+Comme on l'a dit on multiplie par l'inverse pour "inverser" la multiplication par 2 et retrouver A.
 
 ```python
 from Crypto.Util.number import long_to_bytes

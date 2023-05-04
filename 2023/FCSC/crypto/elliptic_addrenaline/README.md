@@ -29,7 +29,11 @@ ordre = E.order() # 578960446186580977117854925043439539268569308750392608480156
 
 ![](./factor.png)
 
+On est bien ennuyés, tout ce qui marchait avant  (`../elliptical_addventure`) ne marche plus. On va s'y ramener en **se ramenant à un groupe plus petit d'ordre premier**
+
 k//8 est premier donc son inverse h vérifie **(1)** $$2h = 1+ k//8$$ 
+
+On utilise en fait le [théorème de Lagrange](https://www.bibmath.net/dico/index.php?action=affiche&quoi=./l/lagrange.html)
 
 ## Inverser:
 
@@ -46,6 +50,14 @@ $$(2.A).h = G.(2.h.x) = G.(x+kx)$$
 Si par chance `x = 8q`:
 
 $$(2.A).h = G.(x+8kq) = G.x + (G.8kq ) = A + 0 = A$$
+
+**Attention**:
+
+En notation additive: `g * (8kq) = (g * 8k) * q = 0 * q = 0`
+
+En notation multiplicative: `g^{8kq} = (g^{8k})^q = 1^q = 1`
+
+Dans les 2 cas on travaille sur des puissances sauf qu'on utilise la première notation car ça nous arrange de noter `0` le 0 = point à l'infini de la courbe E.
 
 ## Retrouver A et B (cas réel: non multiple de 8)
 

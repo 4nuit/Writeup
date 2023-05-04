@@ -49,6 +49,8 @@ b = 5575174666981890890764528907825714081824110372790101231529440083795672935843
 K = GF(p)
 E = EllipticCurve([K(a), K(b)])
 
+G = E(17794503229134353635970439812949297100225489487588172568389327897754746546280, 17671033459111968710988296061676524036652749365424210951665329683594356030064) #E.gens()
+
 A_plus_B = E(36383477447355227427363222958872178861271407378911499344076860614964920782192, 26621351750863883655273158873320913584591963316330338897549941610801666281894)
 A_minus_B = E(35017143636654127615837925410012912090234292410137109973033835965781971515338, 55888666729705323990488128732989325970476008697224551268788692630541877244410)
 
@@ -58,19 +60,23 @@ bb = A_plus_B - A_minus_B #2B
 k = E.order()//8 #premier
 h = (k + 1) // 2 #inverse de k dans E (modulo 2)
 
-for r in range(8):
-    A = aa*h - G*k*r
-    if A + A == aa:
-        partie = long_to_bytes(int(A[0]))
-        if partie.startswith(b"FCSC{"):
-            print(partie.decode(), end = '')
-    break
+number = 8
 
-for r in range(8):
-    B = bb*h - G*k*r 
-    if B + B == bb:
-        partie = long_to_bytes(int(B[0]))
-        if partie.endswith(b"}"):
-            print(partie.decode())
-    break
+for r in range(number):
+        A = aa*h - G*k*r
+        if A + A == aa:
+                partie = long_to_bytes(int(A[0]))
+                if partie.startswith(b"FCSC{"):
+                        print(partie.decode(), end = '')
+                        break
+
+for r in range(number):
+        B = bb*h - G*k*r 
+        if B + B == bb:
+                partie = long_to_bytes(int(B[0]))
+                if partie.endswith(b"}"):
+                        print(partie.decode())
+                        break
 ```
+
+![](./flag.png)

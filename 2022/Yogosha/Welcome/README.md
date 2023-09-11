@@ -42,7 +42,7 @@ Find:
 sudo find / -name "secret_note.txt" 2>/dev/null
 ```
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/Yogosha/Welcome/find.png)
+![](./find.png)
 
 Il ne reste plus qu'à afficher le premier fichier
 
@@ -62,4 +62,4 @@ tar -xf layer.tar
 cd data; cat secret*
 ```
 
-![alt text](https://github.com/0x14mth3n1ght/Writeup/blob/master/Yogosha/Welcome/image.png)
+![](./image.png)

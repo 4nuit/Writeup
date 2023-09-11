@@ -12,5 +12,6 @@ Notes de CTFs, solo ou en équipe.
 	- ![ZiTF](./2023/ZiTF)
 	- ![HackSecuReims](./2023/HackSecuReims)
 	- ![FCSC (Full)](./2023/FCSC)
+	- ![Patriot (Full)](./2023/Patriot)
 
 Voir aussi ces [notes](https://github.com/0x14mth3n1ght/Hacking) par catégorie.

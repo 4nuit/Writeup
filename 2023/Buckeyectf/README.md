@@ -20,3 +20,7 @@
 ## Results
 
 ![](./result.png)
+
+## Wu
+
+[web + reverse/emotionally_damaged](https://github.com/SuperStormer/writeups/tree/master/buckeyectf_2023/)

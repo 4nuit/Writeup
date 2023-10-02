@@ -13,6 +13,12 @@ Si nonce+key = même flot :
 	xor(A1,A2) = xor(B1,b2)
 ```
 
+- xor(' ',message) pour chaque ligne
+
+- construire la clef la plus probable, xor(cle,message) pour chaque ligne
+
+- retrouver le debut du flag, sur 2 lignes 
+
 ![](1.png)
 
 ![](2.png)

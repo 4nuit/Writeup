@@ -4,7 +4,8 @@ Notes de CTFs, solo ou en équipe.
 
 - 2022:
 	- ![StarHackademint](./2022/Star2022)
-	- ![Sekai](./2022/SekaiCTF)	
+	- ![Sekai](./2022/SekaiCTF)
+	- ![Tracs](./2022/TRACS)	
 	- ![Yogosha](./2022/Yogosha)
 	- ![Kringlecon - SANS Institute](./2022/Kringlecon)
 

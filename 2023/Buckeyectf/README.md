@@ -24,3 +24,5 @@
 ## Wu
 
 [web + reverse/emotionally_damaged](https://github.com/SuperStormer/writeups/tree/master/buckeyectf_2023/)
+
+[SloppyJoePirates ytb wu (5x crypto, 5x misc, 3x pwn, 2x rev, 7x web)](https://youtu.be/I-zBSHp9qOc)

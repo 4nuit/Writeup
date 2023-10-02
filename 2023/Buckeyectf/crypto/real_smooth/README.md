@@ -11,6 +11,7 @@ Si nonce+key = même flot :
 	encrypt(A1) = B1
 	encrypt(A2) = B2 
 	xor(A1,A2) = xor(B1,b2)
+```
 
 ![](1.png)
 

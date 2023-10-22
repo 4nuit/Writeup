@@ -1,3 +1,7 @@
+# Auteur
+
+`K_lfa (BZHack / ESDAcademy)`
+
 ## Sol: Plusieurs encodages
 
 - `python solve.py` (binaire)

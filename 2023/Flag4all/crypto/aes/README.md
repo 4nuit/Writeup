@@ -1,3 +1,10 @@
+# Auteur
+
+`Raccoon (BZHack Friends)`
+
+## Sol
+
+```python
 from pwn import xor
 
 """
@@ -14,3 +21,4 @@ p1 = plaintext[:16]; p2 = plaintext[16:]
 c1 = ciphertext[:16]; c2 = ciphertext[16:]
 
 iv = xor(xor(p1,p2),c1); print(iv.hex())
+```

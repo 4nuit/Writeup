@@ -1,10 +1,23 @@
-# Return Of Coppersmith Attack
+# Auteur
 
+`Raccoon (BZHack Friends)`
 
-## Factorisation
+## Return Of Coppersmith Attack
 
 J'ai utilisé `neca` https://ctftime.org/writeup/8805 qui a le bon goût de factoriser en 22s.
 
-##
+## Solution
 
-Il suffit ensuite de run `solve.py` .
+```python
+from Crypto.Util.number import inverse
+from Crypto.Util.number import long_to_bytes
+
+p = 68104711016354376405118759682335674924896667553165564889186375015552836698409
+q = 120710776999175888066514343938579368266818925760131857810940892069617099728031
+e = 65537
+c = 1908890600064914994631550246621932480199371644485880805675109220512831636168784377813299457028372208794045196611130902698175695038058932360097192684779691
+
+d = inverse(e,(p-1)*(q-1))
+m = pow(c,d,p*q)
+print(long_to_bytes(m))
+```

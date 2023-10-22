@@ -1,7 +1,11 @@
+# Auteur
+
+`K_lfa (BZHack / ESDAcademy)`
+
 ## Sol
 
 ```bash
-john --format=raw-md5 flag_maraboute.txt --show
+john --format=raw-md5 flag_maraboute.txt
 ```
 
 iletaitunefoisunflag

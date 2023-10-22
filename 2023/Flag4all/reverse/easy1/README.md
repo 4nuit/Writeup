@@ -1,3 +1,7 @@
+# Auteur
+
+`K_lfa (BZHack / ESDAcademy)`
+
 ## Methode 1 (non effective)
 
 ```bash

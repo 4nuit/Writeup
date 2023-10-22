@@ -1,3 +1,10 @@
+# Auteur
+
+`Raccoon (BZHack Friends)`
+
+## Sol
+
+```python
 from Crypto.Util.number import *
 from Crypto.Util import *
 
@@ -13,3 +20,4 @@ d = inverse(e,(p-1)*(q-1)*(r-1))
 m = pow(c,d,n) 
 
 print(long_to_bytes(m))
+```

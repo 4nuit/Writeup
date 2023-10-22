@@ -1,3 +1,7 @@
+# Auteur
+
+`K_lfa (BZHack / ESDAcademy)`
+
 ## Decompiler PYC
 
 Comme vu dans le chall précédent avec strace, le `.exe` cache un `.pyc`

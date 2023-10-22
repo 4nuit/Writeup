@@ -1,3 +1,5 @@
+## Non Résolu
+
 from pwn import *
 
 shell = ssh(host='bash-hell.flag4all.sh', user='the_gate', port=666, password='iop')

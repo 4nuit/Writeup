@@ -1,4 +1,7 @@
+## Non résolu
 
-- For3ns1c_St4r7
+Avec `zcat *dat` on obtient la consigne ainsi que des bouts de flag
 
-- _eAsilY_but_
+- `For3ns1c_St4r7`
+
+- `_eAsilY_but_`

@@ -1,3 +1,5 @@
+#Non Résolu
+
 from pwn import xor
 
 k1 = b'1039380a3d3c0d0028465f0b3b016d704c1333193e7a12205a2d0812'
@@ -17,3 +19,5 @@ for i in range(len(cles)):
 		resultat = xor(cles[i], cles[j])
 		print(f'key {i + 1} XOR key {j + 1}: {resultat}')
 		#print(str(resultat)[2:-1])
+
+

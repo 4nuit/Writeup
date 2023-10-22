@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget"
+        },
+        "title": "Sheep Head Section",
+        "description": "End Of The Line",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "custom:collection/sheep/jeb_sheep",
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

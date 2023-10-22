@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:zombie_head"
+		},
+		"title": "Zombie",
+		"description": "Zombie Head",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/hostile/vanilla",
+	"criteria": {
+		"zombie": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:zombie_head"
+					}
+				]
+			}
+		}
+	}
+}

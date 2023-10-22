@@ -1,0 +1,77 @@
+Il est parfois
+bon de savoir lire,
+une rfc sur les technos utilisées
+pour les comprendre 
+et y voir des failles et des astuces,
+pour cacher des choses.
+Pour ce chall
+Il est peut etre utile
+de lire 
+cette rfc : 
+https://datatracker.ietf.org/doc/html/rfc4648 :-)
+Il vous faudra sortir vos langages de programation
+(bon moi je fais du bash)
+mais il est bien sur 
+possible de le faire 
+avec d'autres langages.
+il y a deja eu
+des epreuves de ctf
+avec cette technique, donc
+je vous souhaite Bon courage.
+Penthium 2
+From BZHack
+Maintenant une petit chanson :
+I used to think that I could not go on
+And life was nothing but an awful song
+But now I know the meaning of true love
+I'm leaning on the everlasting arms
+If I can see it, then I can do it
+If I just believe it, there's nothing to it
+I believe I can FLAG
+I believe I can touch the sky
+I think about it every night and day
+Spread my wings and FLAG away
+I believe I can soar
+I see me running through that open door
+I believe I can FLAG
+I believe I can FLAG
+I believe I can FLAG (woo)
+See I was on the verge of breaking down
+Sometimes silence can seem so loud
+There are miracles in life I must achieve
+But first I know it starts inside of me, ho-oh
+If I can see it (woo), then I can be it
+If I just believe it, there's nothing to it
+I believe I can FLAG
+I believe I can touch the sky
+I think about it every night and day
+Spread my wings and FLAG away
+I believe I can soar
+I see me running through that open door
+I believe I can FLAG
+I believe I can FLAG
+Oh, I believe I can FLAG (wooo)
+Hey, 'cause I believe in me
+Ohhh
+If I can see it (woo), then I can do it (I can do it)
+If I just believe it, there's nothing to it (hey!)
+I believe I can FLAG (woo!)
+I believe I can touch the sky
+I think about it every night and day
+Spread my wings and FLAG away
+I believe I can soar
+I see me running through that open door
+I believe I can FLAG (I can FLAG)
+I believe I can FLAG (I can FLAG)
+I believe I can FLAG (I can FLAG)
+Hey, if I just spread my wings (I can FLAG)
+I can FLAG (I can FLAG)
+I can FLAG (I can FLAG)
+I can FLAG, hey (I can FLAG)
+If I just spread my wings (I can FLAG)
+I can FLAG (I can FLAG, I can FLAG)
+(Woo!) (I can FLAG)
+Fly-eye-eye
+Oui oui je sais c'est facile
+et sert a rien :D 
+mais faut bien remplir 

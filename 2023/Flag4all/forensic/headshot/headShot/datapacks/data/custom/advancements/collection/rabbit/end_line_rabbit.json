@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget"
+        },
+        "title": "Rabbit Collection Head Section",
+        "description": "End Of The Line",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "custom:collection/rabbit/black_rabbit",
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

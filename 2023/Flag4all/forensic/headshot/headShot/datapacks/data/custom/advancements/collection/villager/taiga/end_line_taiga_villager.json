@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget"
+        },
+        "title": "Taiga Villager Head Section",
+        "description": "End Of The Line",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "custom:collection/villager/taiga/15_weaponsmith_taiga_villager",
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

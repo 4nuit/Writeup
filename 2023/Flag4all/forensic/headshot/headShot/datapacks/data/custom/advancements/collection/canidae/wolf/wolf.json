@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;1252770494,873088685,-1540682700,-2092665590],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdhZGU0OWY1MDEzMTExNTExZGM1MWJhYjc2OWMxYWQ2OTUzMTlhNWQzNTViMzZhZTkyMzRlYTlkMWZmOGUifX19'}]}}}"
+		},
+		"title": "Wolf",
+		"description": "1% + 10% per looting",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/canidae/wolf",
+	"criteria": {
+		"wolf": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:player_head",
+						"nbt": "{SkullOwner:{Id:[I;1252770494,873088685,-1540682700,-2092665590],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdhZGU0OWY1MDEzMTExNTExZGM1MWJhYjc2OWMxYWQ2OTUzMTlhNWQzNTViMzZhZTkyMzRlYTlkMWZmOGUifX19'}]}}}"
+					}
+				]
+			}
+		}
+	}
+}

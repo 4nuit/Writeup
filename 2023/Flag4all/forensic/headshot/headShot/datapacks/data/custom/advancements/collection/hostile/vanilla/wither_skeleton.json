@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"title": "Wither Skeleton",
+		"description": "Wither Skeleton Skull",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/hostile/vanilla/skeleton",
+	"criteria": {
+		"wither_skeleton": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:wither_skeleton_skull"
+					}
+				]
+			}
+		}
+	}
+}

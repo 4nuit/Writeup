@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget"
+        },
+        "title": "Wither Boss Head Section",
+        "description": "End Of The Line",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "custom:collection/wither_boss/invulnerable_blue_wither",
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

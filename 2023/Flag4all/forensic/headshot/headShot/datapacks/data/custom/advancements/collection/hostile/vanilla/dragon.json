@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:dragon_head"
+		},
+		"title": "Ender Dragon",
+		"description": "Dragon Head",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/hostile/vanilla/creeper",
+	"criteria": {
+		"dragon": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:dragon_head"
+					}
+				]
+			}
+		}
+	}
+}

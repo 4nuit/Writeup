@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:skeleton_skull"
+		},
+		"title": "Skeleton",
+		"description": "Skeleton Skull",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/hostile/vanilla/zombie",
+	"criteria": {
+		"skeleton": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:skeleton_skull"
+					}
+				]
+			}
+		}
+	}
+}

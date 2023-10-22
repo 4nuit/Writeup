@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget"
+        },
+        "title": "Sea Head Section",
+        "description": "End Of The Line",
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "custom:collection/sea/drowned",
+    "criteria": {
+        "location": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

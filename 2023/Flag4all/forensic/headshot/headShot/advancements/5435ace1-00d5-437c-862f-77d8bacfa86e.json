@@ -1,0 +1,267 @@
+{
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2020-12-14 12:21:46 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/savanna/end_line_savanna_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/taiga/end_line_taiga_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/hostile/anti_villager/end_line_anti_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/taiga/end_line_taiga_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/llama/end_line_llama": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/jungle/parrot/end_line_parrot": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/rabbit/end_line_rabbit": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/jungle/panda/end_line_panda": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/nether/end_line_nether": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/hostile/slime/end_line_slime": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/hostile/classic/end_line_classic": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/savanna/end_line_savanna_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/desert/end_line_desert_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/plain/end_line_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/jungle/other/end_line_other": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/desert/end_line_desert_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/bee/end_line_bee": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2020-12-14 12:00:43 +0100"
+    },
+    "done": false
+  },
+  "custom:collection/zombie_villager/snow/end_line_snow_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/sheep/end_line_sheep": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/jungle/end_line_jungle_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/passive/end_line_passive": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/plain/end_line_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/passive": {
+    "criteria": {
+      "pig": "2020-12-14 12:24:06 +0100"
+    },
+    "done": false
+  },
+  "custom:collection/sea/end_line_sea": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/wither_boss/end_line_wither_boss": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/swamp/end_line_swamp_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/root": {
+    "criteria": {
+      "pig": "2020-12-14 12:24:06 +0100"
+    },
+    "done": false
+  },
+  "custom:collection/passive/pig": {
+    "criteria": {
+      "pig": "2020-12-14 12:24:06 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/end/shulker/end_line_shulker": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/zombie_villager/jungle/end_line_jungle_zombie_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/canidae/wolf/end_line_wolf": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/canidae/dog/end_line_dog": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/cat/end_line_cat": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/hostile/vanilla/end_line_vanilla": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/snow/end_line_snow_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2020-12-14 12:21:46 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2020-12-14 12:19:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2020-12-14 12:21:46 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/end/classic/end_line_classic": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/villager/swamp/end_line_swamp_villager": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/horse/end_line_horse": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "custom:collection/canidae/fox/end_line_fox": {
+    "criteria": {
+      "location": "2020-12-14 12:00:43 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 2584
+}

@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;1474187630,-1998828088,-1801163876,-1103790190],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGUzYzk4MGZjMTdlMzY3OWMzMzQyYjQyM2RkZWE1ZjUwNmJmOGQ1NjZkMmU1NDI1NzlmZmZkYTFhNGU2M2JmIn19fQ=='}]}}}"
+		},
+		"title": "Angry Wolf",
+		"description": "1% + 10% per looting",
+        "frame": "task",
+        "announce_to_chat": false,
+        "show_toast": true
+	},
+	"parent": "custom:collection/canidae/wolf/wolf",
+	"criteria": {
+		"angry_wolf": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:player_head",
+						"nbt": "{SkullOwner:{Id:[I;1474187630,-1998828088,-1801163876,-1103790190],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGUzYzk4MGZjMTdlMzY3OWMzMzQyYjQyM2RkZWE1ZjUwNmJmOGQ1NjZkMmU1NDI1NzlmZmZkYTFhNGU2M2JmIn19fQ=='}]}}}"
+					}
+				]
+			}
+		}
+	}
+}

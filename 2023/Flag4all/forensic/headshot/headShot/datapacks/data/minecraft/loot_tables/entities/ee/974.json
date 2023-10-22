@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:player_head",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{SkullOwner:{Id:[I;-889477175,567953625,-1585709287,-2128725389],Name:'TheFantasio974',Properties:{textures:[{Value:'aHR0cHM6Ly9zb3VuZGNsb3VkLmNvbS9tYWQtY29yZS9kYXJrdGVrLXRhLWdldWxlCg='}]}}}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "entity_properties",
+          "predicate": {
+            "nbt": "{ActiveEffects: [{Id: 14b}], CustomName:\"{\\\"text\\\":\\\"thefantasio974\\\"}\"}"
+          },
+          "entity": "this"
+        }
+      ]
+    }
+  ]
+}

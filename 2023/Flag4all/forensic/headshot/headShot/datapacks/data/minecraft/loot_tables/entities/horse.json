@@ -1,0 +1,398 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "vanilla:entities/horse"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "conditions": [
+            {
+              "condition": "killed_by_player"
+            },
+            {
+              "condition": "random_chance_with_looting",
+              "chance": 0.02,
+              "looting_multiplier": 0.01
+            }
+          ],
+          "children": [
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;-649999512,-2008920200,-1107796195,1013873344],Name:'White Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBhMmRiMmYxZWI5M2U1OTc4ZDJkYzkxYTc0ZGY0M2Q3Yjc1ZDllYzBlNjk0ZmQ3ZjJhNjUyZmJkMTUifX19'}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:0}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:256}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:512}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:768}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1024}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;1709751602,1867008914,-1421279718,-580163631],Name:'Creamy Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI4ZDFhYjRiZTFlMjhiN2I0NjFmZGVhNDYzODFhYzM2M2E3ZTVjMzU5MWM5ZTVkMjY4M2ZiZTFlYzlmY2QzIn19fQ=='}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:257}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:513}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:769}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1025}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;1512392417,571690794,-1933680643,-549555607],Name:'Chestnut Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjY2YjJiMzJkMzE1MzljNzM4M2Q5MjNiYWU0ZmFhZjY1ZGE2NzE1Y2Q1MjZjMzVkMmU0ZTY4MjVkYTExZmIifX19'}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:2}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:258}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:514}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:770}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1026}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;577016979,-1070182824,-1528440215,-871866075],Name:'Brown Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVkZjczZWExMmNlNmJkOTBhNGFlOWE4ZDE1MDk2NzQ5Y2ZlOTE4MjMwZGM4MjliMjU4MWQyMjNiMWEyYTgifX19'}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:3}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:259}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:515}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:771}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1027}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;1597806153,-330152233,-1874074772,-1184095657],Name:'Black Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY4N2NmM2ZhMWE4OTE0ZWJiYTgzNDgxOGIyNDgwMWZkOTM5MmU3YTc2NGJiMjc2NjM3OWQ2OTI4OWZkIn19fQ=='}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:4}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:260}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:516}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:772}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1028}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+              "tag": "{SkullOwner:{Id:[I;2087970192,1223378901,-1960459082,-1588307600],Name:'Gray Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY2NzZjNGQ2ZjBmNWVkNjA2YTM1NmYzY2M1YTI5ZDE0YWFmZTY1NzIxYmExYTFhOTVjNWFjNGM1ZTIzOWU1In19fQ=='}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:5}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:261}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:517}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:773}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1029}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:player_head",
+              "functions": [
+                {
+                  "function": "set_nbt",
+                  "tag": "{SkullOwner:{Id:[I;-1046924493,249775259,-1484423460,-771134076],Name:'Dark Brown Horse',Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjY2MWYyM2ZiNzY2MjRmZmJhYmJkYTMxY2E0YTM4YjQwNGZlNjNlZjM3ZDRiYTRlNGM1NDQxYTIxZTNhNiJ9fX0='}]}}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "alternative",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:6}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:262}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:518}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:774}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{Variant:1030}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

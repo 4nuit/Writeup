@@ -1,0 +1,17 @@
+def chiffre(message, clef, module):
+    exponentiation_modulaire(message, clef, module):
+
+def exponentiation_modulaire(a, e, n):
+    e=bin(e)[2:]
+    acc=1
+    for i in e:
+        acc = acc * acc % n   # SQUARE
+        if i=='1':
+            acc = acc * a % n # MULTIPLY
+        else:
+            # Contre-mesure contre le Side-Channel
+            # On fait le calcul pour rien afin de passer
+            # le même temps et de consommer la même énergie
+            # que le bit soit à 1 ou à 0
+            forget = acc * a % n # MULTIPLY
+    return acc

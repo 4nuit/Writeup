@@ -18,6 +18,6 @@ Notes de CTFs, solo ou en équipe.
 	- ![Tcp1pCTF](./2023/Tcp1p)
 	- ![Flag4all](./2023/Flag4all)	
 	- ![Tracs](./2023/TRACS)
-	- ![120minCTF)(./2023/120CTF)
+	- ![120minCTF](./2023/120CTF)
 
 Voir aussi ces [notes](https://github.com/0x14mth3n1ght/Hacking) par catégorie.

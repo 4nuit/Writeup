@@ -3,7 +3,7 @@
 Notes de CTFs, solo ou en équipe.
 
 - 2024:
-	- ![GCC CTF](./2024/GCC_CTF)
+	- ![GCC CTF (FULL)](./2024/GCC_CTF)
 
 - 2023:
 	- ![120minCTF](./2023/120CTF)

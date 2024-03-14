@@ -1,0 +1,3 @@
+C = dpriv_b *A = priv_a * B
+ 
+A /priv_a= B/priv_b 

@@ -14,6 +14,7 @@ NB: No MITRE ATT&CK subtechnique (if you find T9999.001, put T9999)
 NB2: The malware family is **lowercase**.
 
 Download link: [here](http://challenges1.gcc-ctf.com:8080/disk.7z) (sha1sum(disk.7z) = f1487f504b9dd1241bcea9ffec8a43147ecfafc6)
+New Download link: [here](https://mega.nz/file/VDFx0YBT#5BJVdGt-KhmUXji9j2vTEUGzodAjRq3IKXvWF9V3BeU)
 Password: 'P@ssword2024IsntGoodEnough?'
 
 Author: [Antxine](https://twitter.com/Antxine_D)

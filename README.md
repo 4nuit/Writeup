@@ -3,7 +3,7 @@
 Notes de CTFs, solo ou en équipe.
 
 - 2024:
-	- ![HTB CyberApocalypse](./2024/HTB_CyberApocalypse)
+	- ![HTB CyberApocalypse (FULL)](./2024/HTB_CyberApocalypse)
 	- ![GCC CTF (FULL)](./2024/GCC_CTF)
 
 - 2023:

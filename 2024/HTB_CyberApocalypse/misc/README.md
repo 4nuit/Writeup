@@ -1,0 +1,3 @@
+## Solved
+
+![Hardware](./hardware.png)

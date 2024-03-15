@@ -1,0 +1,3 @@
+## Solved
+
+![reverse](./reversing.png)

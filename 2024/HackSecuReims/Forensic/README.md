@@ -70,7 +70,7 @@ git clone https://github.com/volatilityfoundation/volatility
 cd volatility/volatility/tools/linux
 make 
 cd
-zip $(lsb_release -i -s)_$(uname -r)_profile.zip volatility/tools/linux/module.dwarf /usr/lib/debug/boot/System.map-5.10.0-21-amd64
+zip $(lsb_release -i -s)_$(uname -r)_profile.zip volatility/tools/linux/module.dwarf /usr/lib/debug/boot/System.map-4.19.0-26-amd64
 
 # Si vol2 est installé dans la VM, sinon copier sur l'hôte
 cp Debian_4.19.0-26-amd64_profile.zip volatility/volatility/plugins/overlays/linux
@@ -94,10 +94,10 @@ git clone https://github.com/volatilityfoundation/dwarf2json
 cd dwarf2json/
 go mod download github.com/spf13/pflag
 go build
-./dwarf2json linux --elf /usr/lib/debug/vmlinux-5.10.0-21-amd64 > ~/vmlinux-5.10.0-21-amd64.json
+./dwarf2json linux --elf /usr/lib/debug/vmlinux-4.19.0-26-amd64 > ~/vmlinux-4.19.0-26-amd64.json
 
 # Si vol3 installé dans la VM, sinon copier sur l'hôte
-cp vmlinux-5.10.0-21-amd64.json volatility3/volatility3/symbols
+cp vmlinux-4.19.0-26-amd64.json volatility3/volatility3/symbols
 ```
 
 ### Analyse avec vol2 (retour sur l'hôte)
@@ -262,8 +262,53 @@ Non terminé, on remarque:
 python ~/volatility/vol.py -f hsr2024.dmp --profile=LinuxDebian_4_19_0-26-amd64_profilex64 linux_netstat
 ...
 TCP      10.13.13.109    :49114 10.13.13.104    :   22 ESTABLISHED                   ssh/1335
-UNIX 27311            gpg-agent/1374  /root/.gnupg/S.gpg-agent
-UNIX 27312            gpg-agent/1374  /root/.gnupg/S.gpg-agent.extra
-UNIX 27313            gpg-agent/1374  /root/.gnupg/S.gpg-agent.browser
-UNIX 27314            gpg-agent/1374  /root/.gnupg/S.gpg-agent.ssh
+```
+
+Voici comment terminer les parties 5 et 6 avec **1 autre plugin vol2**, https://github.com/fox-it/OpenSSH-Session-Key-Recovery:
+
+- https://or1on-ctf.github.io/2021/07/27/HTB-Business-CTF-Compromise.html
+
+Avec le port 1335  que l'on vient de remarquer, on lance **linux_sshkeys**:
+
+
+```bash
+cp ~/OpenSSH-Session-Key-Recovery/volatility2/openssh_sessionkeys.py ~/volatility/contrib/plugins/
+python ~/volatility/vol.py -f hsr2024.dmp --profile=LinuxDebian_4_19_0-26-amd64_profilex64 linux_sshkeys -p 1335
+
+Scanning for OpenSSH sshenc structures...
+
+Name                           Pid      PPid     Address            Name                           Key                                                                                                                              IV
+------------------------------ -------- -------- ------------------ ------------------------------ -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------
+ssh [ssh hsr@10.13.13.104]         1335      999 0x00005595fe1d1dc0 aes256-gcm@openssh.com         0cfcce93342a2c43bd05e8f296bb7b4a61a734c3b274eb765017523269443d2b                                                                 64b7a25d5def09e22494242a
+ssh [ssh hsr@10.13.13.104]         1335      999 0x00005595fe1d1ea0 aes256-gcm@openssh.com         955f60ba9b171179f584b91e1acd20666859826c5977ec56490553ed29d0ee72
+```
+
+On crée le JSON comme indiqué pour le second outil (https://github.com/fox-it/OpenSSH-Network-Parser):
+
+```json
+{
+        "task_name": "sshd",
+        "sshenc_addr": 94102701809088,
+        "cipher_name": "aes256-gcm@openssh.com",
+        "key": "0cfcce93342a2c43bd05e8f296bb7b4a61a734c3b274eb765017523269443d2b",
+        "iv": "64b7a25d5def09e22494242a"
+}
+{
+        "task_name": "sshd",
+        "sshenc_addr": 94102701809312,
+        "cipher_name": "aes256-gcm@openssh.com",
+        "key": "955f60ba9b171179f584b91e1acd20666859826c5977ec56490553ed29d0ee72",
+        "iv": "1f4146c82cabf3010ec680de"
+}
+```
+
+```python
+git clone https://github.com/fox-it/OpenSSH-Network-Parser && cd OpenSSH-Network-Parser/openssh_network_parser
+pip install psutil tabulate gevent libnacl cryptography pynids@https://github.com/MITRECND/pynids/tarball/master#egg=pynids-0.6.2
+python2 setup.py install
+```
+
+```bash
+mkdir ssh-traffic
+network-parser -p hsr2024.pcap --popt keyfile=keys.json --proto ssh -o ssh-traffic/ 
 ```

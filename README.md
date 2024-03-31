@@ -3,6 +3,7 @@
 Notes de CTFs, solo ou en équipe.
 
 - 2024:
+	- ![HackSecuReims](./2024/HackSecuReims)
 	- ![HTB CyberApocalypse (FULL)](./2024/HTB_CyberApocalypse)
 	- ![GCC CTF (FULL)](./2024/GCC_CTF)
 

@@ -76,8 +76,6 @@ zip $(lsb_release -i -s)_$(uname -r)_profile.zip volatility/tools/linux/module.d
 cp Debian_4.19.0-26-amd64_profile.zip volatility/volatility/plugins/overlays/linux
 ```
 
-![](./virtualbox.png)
-
 Attention, le profil crée se nommera **LinuxDebian_4_19_0-26-amd64_profilex64**, la plupart des plugins seront en **linux_bash, linux_pslist** etc. Pour retrouver le nom du profil:
 
 ```bash
@@ -95,6 +93,8 @@ cd dwarf2json/
 go mod download github.com/spf13/pflag
 go build
 ./dwarf2json linux --elf /usr/lib/debug/vmlinux-4.19.0-26-amd64 > ~/vmlinux-4.19.0-26-amd64.json
+
+![](./virtualbox.png)
 
 # Si vol3 installé dans la VM, sinon copier sur l'hôte
 cp vmlinux-4.19.0-26-amd64.json volatility3/volatility3/symbols
@@ -115,8 +115,8 @@ Celle-ci a été mise à jour, a pingé `10.13.13.105` puis a déposé un ransom
 Passée la mesure anti `strings`, on observe également flag:
 
 ```bash
-echo -n "RmxhZyBpcyA6IEhTUntNM20wcnlfRjByM25zMWNzXzN2M3J5X1QxbWV9" | base64 -d 
-#Flag is : HSR{M3m0ry_F0r3ns1cs_3v3ry_T1me}
+echo -n "RmxhZyBpcyA6IEhTUntNM20wcnlfRjByM25zMWNzX0FnYWluX0FnYWluXyZfQWdhaW59" | base64 -d
+Flag is : HSR{M3m0ry_F0r3ns1cs_Again_Again_&_Again}
 ```
 
 ## Partie 2/6
@@ -302,9 +302,28 @@ On crée le JSON comme indiqué pour le second outil (https://github.com/fox-it/
 }
 ```
 
+Pour fix l'outil (CTRL+F pynids) https://scribe.rip/@kevintk1/htb-business-ctf-2021-forensic-compromised-1aa265b843a6:
+
 ```python
 git clone https://github.com/fox-it/OpenSSH-Network-Parser && cd OpenSSH-Network-Parser/openssh_network_parser
-pip install psutil tabulate gevent libnacl cryptography pynids@https://github.com/MITRECND/pynids/tarball/master#egg=pynids-0.6.2
+pip install psutil tabulate gevent libnacl cryptography #pynids@https://github.com/MITRECND/pynids/tarball/master#egg=pynids-0.6.2
+```
+
+```bash
+git clone https://github.com/MITRECND/pynids && cd pynids
+tar -xvf lib*gz && rm *gz && cd libnids-1.25
+mkdir build && cd build
+../configure
+make
+cp src/libnids.a ../src
+cd ../..
+python2 setup.py install
+```
+
+De retour pour l'outil principal (network ssh):
+
+```bash
+cd ..
 python2 setup.py install
 ```
 

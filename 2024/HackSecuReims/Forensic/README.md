@@ -264,14 +264,13 @@ python ~/volatility/vol.py -f hsr2024.dmp --profile=LinuxDebian_4_19_0-26-amd64_
 TCP      10.13.13.109    :49114 10.13.13.104    :   22 ESTABLISHED                   ssh/1335
 ```
 
-Voici comment terminer les parties 5 et 6 avec **1 autre plugin vol2**, https://github.com/fox-it/OpenSSH-Session-Key-Recovery:
-
-- https://or1on-ctf.github.io/2021/07/27/HTB-Business-CTF-Compromise.html
+Voici comment terminer les parties 5 et 6 avec **1 autre plugin vol2**, https://or1on-ctf.github.io/2021/07/27/HTB-Business-CTF-Compromise.html
 
 Avec le port 1335  que l'on vient de remarquer, on lance **linux_sshkeys**:
 
 
 ```bash
+git clone https://github.com/fox-it/OpenSSH-Session-Key-Recovery
 cp ~/OpenSSH-Session-Key-Recovery/volatility2/openssh_sessionkeys.py ~/volatility/contrib/plugins/
 python ~/volatility/vol.py -f hsr2024.dmp --profile=LinuxDebian_4_19_0-26-amd64_profilex64 linux_sshkeys -p 1335
 
@@ -306,28 +305,47 @@ Pour fix l'outil (CTRL+F pynids) https://scribe.rip/@kevintk1/htb-business-ctf-2
 
 ```python
 git clone https://github.com/fox-it/OpenSSH-Network-Parser && cd OpenSSH-Network-Parser/openssh_network_parser
-pip install psutil tabulate gevent libnacl cryptography #pynids@https://github.com/MITRECND/pynids/tarball/master#egg=pynids-0.6.2
 ```
+
+Comme indiqué, creer un virtualenv python2:
+
+```
+pyenv local 2.7
+pyenv virtualenv venv
+pyenv activate venv
+pip install psutil tabulate gevent libnacl cryptography
+```
+
+Puis install manuellement pynids:
 
 ```bash
 git clone https://github.com/MITRECND/pynids && cd pynids
-tar -xvf lib*gz && rm *gz && cd libnids-1.25
+tar -xvf lib*gz && rm -f *gz && cd libnids*
 mkdir build && cd build
 ../configure
 make
 cp src/libnids.a ../src
-cd ../..
-python2 setup.py install
+```
+
+```bash
+cd ../../dist
+tar -xvf *gz && rm -f *gz && cd pynids*
+python setup.py install
 ```
 
 De retour pour l'outil principal (network ssh):
 
 ```bash
-cd ..
+cd ../../../..
 python2 setup.py install
 ```
 
+Enfin , de retour dans le répertoire du dump
+
 ```bash
+cd ~/hsr/forensics
+pyenv local 2.7.18/envs/venv
+#CTRL+D, CTRL+ALT+T
 mkdir ssh-traffic
 network-parser -p hsr2024.pcap --popt keyfile=keys.json --proto ssh -o ssh-traffic/ 
 ```

@@ -57,7 +57,11 @@ On crée alors une VM Virtualbox avec l'iso de **Debian10**:
 
 - `debian-10.13.0-amd64-netinst.iso`: https://www.debian.org/releases/buster/debian-installer/
 
-Après installation (prévoir au moins 20G en une partition):
+**Notes d'installation**:
+
+- prévoir au moins 20G dans une partition
+- stockage = controlleur SATA comprenant 1 vdi + 1 iso 
+- système  = optique, disque dur + activer cache E/S + EFI (os spécial) + HyperV
 
 ```bash
 sudo apt install linux-headers-4.10.0-26-amd64 linux-image-4.10.0-26-amd64-dbg git build-essential dwarfdump make zip

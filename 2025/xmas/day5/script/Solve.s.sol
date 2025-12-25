@@ -16,7 +16,7 @@ contract Solve is Script {
         uint256 santaKey = vm.envUint("PRIVATE_KEY"); // load from env
         vm.startBroadcast(santaKey);
 
-        // Read storage slot 5 → contains bytes32 secret
+        // Read storage slot 7 → contains bytes32 secret
         bytes32 secret = vm.load(CHALL, bytes32(uint256(7)));
         console.logBytes32(secret);
 

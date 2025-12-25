@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Warning: AI-generated HTML -->
+    <title>Community Gift Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .snow-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #c41e3a;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1::before {
+            content: '🎄 ';
+        }
+
+        h1::after {
+            content: ' 🎄';
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #2d5016;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01729 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(196, 30, 58, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .counter {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            word-break: break-all;
+        }
+
+        .state-box {
+            background: linear-gradient(135deg, #2d5016 0%, #1a3d0f 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(45, 80, 22, 0.3);
+        }
+
+        .state-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .state-content {
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        button {
+            background: linear-gradient(135deg, #c41e3a 0%, #a01729 100%);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '🎁 ';
+        }
+
+        button::after {
+            content: ' 🎁';
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(196, 30, 58, 0.5);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2d5016 0%, #4a7c2c 100%);
+            border-radius: 15px;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .falling-item {
+            position: fixed;
+            font-size: 2em;
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-100px) rotate(0deg);
+            }
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        .completion-message {
+            text-align: center;
+            font-size: 1.5em;
+            color: #2d5016;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border-radius: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="snow-overlay" id="snowOverlay"></div>
+    
+    <div class="container">
+        <div class="card">
+            <h1>Community Gift Project</h1>
+            <p class="subtitle">Join Santa's workshop and spread holiday cheer!</p>
+            
+            <div class="stat-box" style="margin-bottom: 20px;">
+                <div class="stat-label">✨ Help Received</div>
+                <div class="counter">{{ work_counter }} elf-hours</div>
+            </div>
+
+            <div class="stat-box" style="margin-bottom: 20px;">
+                <div class="stat-label">⏳ Help Needed</div>
+                <div class="counter">{{ required_work - work_counter }} elf-hours</div>
+            </div>
+
+            <div class="state-box">
+                <div class="state-label">🎁 Gift Status</div>
+                <div class="state-content">{{ gift_state }}</div>
+            </div>
+           
+            {% if work_counter != required_work %}
+            <form method="POST" action="{{ url_for('help_santa') }}">
+                <button type="submit">Help Santa Build the Gift!</button>
+            </form>
+            {% else %}
+            <div class="completion-message">
+                🎉 Thank you! The gift is complete! 🎉
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        const christmasItems = ['🎁', '🎄', '⛄', '🎅', '⭐', '🔔', '🦌', '🕯️', '🤶', '❄️'];
+        
+        function createFallingItem() {
+            const item = document.createElement('div');
+            item.className = 'falling-item';
+            item.textContent = christmasItems[Math.floor(Math.random() * christmasItems.length)];
+            item.style.left = Math.random() * 100 + 'vw';
+            item.style.top = '-100px';
+            item.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            item.style.opacity = Math.random() * 0.5 + 0.5;
+            document.body.appendChild(item);
+            
+            setTimeout(() => {
+                item.remove();
+            }, parseFloat(item.style.animationDuration) * 1000);
+        }
+
+        setInterval(createFallingItem, 500);
+
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createFallingItem, i * 300);
+        }
+    </script>
+</body>
+</html>

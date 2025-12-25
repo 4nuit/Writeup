@@ -1,5 +1,5 @@
 
-Using foundy. We need to retrieve the secret from the memory (`bytes32 private magicXmasS3cr3t;`, which is stored in slot7 considering the previous structs in [Challenge.sol](./Challenge.sol])
+Using foundy. We need to retrieve the secret from the memory (`bytes32 private magicXmasS3cr3t;`, which is stored in slot7 considering the previous structs in [Challenge.sol](./Challenge.sol]) ).
 Then, we call `claimElfBySecret(string calldata _name, bytes32 _guess)` with the right arguments to unlock the contract.
 
 ```bash

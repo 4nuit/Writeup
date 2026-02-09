@@ -2,6 +2,9 @@
 
 Notes de CTFs, solo ou en équipe.
 
+- 2026:
+	-![LACTF](./2026/lactf)
+
 - 2025:
 
 	-![Root-Me Xmas](./2025/xmas)

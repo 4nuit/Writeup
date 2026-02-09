@@ -6,8 +6,8 @@ Notes de CTFs, solo ou en équipe.
 	-![LACTF](./2026/lactf)
 
 - 2025:
-
 	-![Root-Me Xmas](./2025/xmas)
+
 - 2024:
 	- ![HackSecuReims](./2024/HackSecuReims)
 	- ![HTB CyberApocalypse (FULL)](./2024/HTB_CyberApocalypse)
